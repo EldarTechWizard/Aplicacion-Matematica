@@ -19,7 +19,12 @@ namespace Aplicacion_Matematica
 
         private void Form1_Load(object sender, EventArgs e)
         {
-             
+            var a = 5;
+            var b = 6;
+
+            var c = a * b;
+
+            System.Console.Write(c);
         }
     }
 }
