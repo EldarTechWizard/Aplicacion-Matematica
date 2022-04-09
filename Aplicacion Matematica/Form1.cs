@@ -19,12 +19,12 @@ namespace Aplicacion_Matematica
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            var a = 5;
-            var b = 6;
+            
+        }
 
-            var c = a * b;
+        private void label1_Click(object sender, EventArgs e)
+        {
 
-            System.Console.Write(c);
         }
     }
 }
