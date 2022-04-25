@@ -45,6 +45,7 @@ namespace Aplicacion_Matematica
             Close();
         }
         //ZXZ<XZ<X<ZX<ZX
+       //XD
         private void MovePanel(object sender, MouseEventArgs e)
         {
             ReleaseCapture();
