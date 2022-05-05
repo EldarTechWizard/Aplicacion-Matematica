@@ -20,41 +20,53 @@ namespace Aplicacion_Matematica
         [DllImport("user32.DLL", EntryPoint = "SendMessage")]
         private extern static void SendMessage(System.IntPtr hWnd, int wMsg, int wParam, int lParam);
 
+    
+
         public Form1()
         {
             InitializeComponent();
+            this.MaximizedBounds = Screen.FromHandle(this.Handle).WorkingArea;
+            this.Padding = new Padding(2);
         }
 
-        private void Form1_Load(object sender, EventArgs e)
-        {
-            
-    
-
-            
-        }
-
-
-
-       private void newButton_Click(object sender, EventArgs e)
-       {
-            Close();
-       }
 
         private void button1_Click(object sender, EventArgs e)
         {
             Close();
         }
-        //ZXZ<XZ<X<ZX<ZX
-       //XD
+     
         private void MovePanel(object sender, MouseEventArgs e)
         {
             ReleaseCapture();
             SendMessage(this.Handle, 0x112, 0xf012, 0);
         }
 
-        private void label2_Click(object sender, EventArgs e)
+        private void Minimizar_Click(object sender, EventArgs e)
         {
+            this.WindowState = FormWindowState.Minimized;
+        }
 
+        private void Agrandar_click(object sender, EventArgs e)
+        {
+            MaximizedAction();
+        }
+
+        private void Desagrandar_Click(object sender, EventArgs e)
+        {
+            NormalAction();
+        }
+
+        private void MaximizedAction()
+        {
+            this.WindowState = FormWindowState.Maximized;
+            Desagrandar.Visible = true;
+            Agrandar.Visible = false;
+        }
+        private void NormalAction()
+        {
+            Desagrandar.Visible = false;
+            Agrandar.Visible = true;
+            this.WindowState = FormWindowState.Normal;
         }
     }
 }
