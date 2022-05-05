@@ -28,16 +28,26 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.label1 = new System.Windows.Forms.Label();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
             this.Cerrar = new System.Windows.Forms.Button();
             this.Agrandar = new System.Windows.Forms.Button();
-            this.Minimizar = new System.Windows.Forms.Button();
-            this.label2 = new System.Windows.Forms.Label();
             this.Desagrandar = new System.Windows.Forms.Button();
+            this.Minimizar = new System.Windows.Forms.Button();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.flowLayoutPanel3 = new System.Windows.Forms.FlowLayoutPanel();
+            this.flowLayoutPanel4 = new System.Windows.Forms.FlowLayoutPanel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.flowLayoutPanel1.SuspendLayout();
             this.flowLayoutPanel2.SuspendLayout();
+            this.flowLayoutPanel3.SuspendLayout();
+            this.flowLayoutPanel4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -51,15 +61,16 @@
             // flowLayoutPanel1
             // 
             this.flowLayoutPanel1.AccessibleRole = System.Windows.Forms.AccessibleRole.MenuBar;
-            this.flowLayoutPanel1.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.flowLayoutPanel1.BackColor = System.Drawing.Color.White;
+            this.flowLayoutPanel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.flowLayoutPanel1.Controls.Add(this.flowLayoutPanel2);
+            this.flowLayoutPanel1.Controls.Add(this.label3);
             this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.flowLayoutPanel1.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
             this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.flowLayoutPanel1.Margin = new System.Windows.Forms.Padding(0);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
             this.flowLayoutPanel1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(921, 29);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(921, 34);
             this.flowLayoutPanel1.TabIndex = 1;
             this.flowLayoutPanel1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.MovePanel);
             // 
@@ -69,78 +80,158 @@
             this.flowLayoutPanel2.Controls.Add(this.Agrandar);
             this.flowLayoutPanel2.Controls.Add(this.Desagrandar);
             this.flowLayoutPanel2.Controls.Add(this.Minimizar);
-            this.flowLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Right;
             this.flowLayoutPanel2.FlowDirection = System.Windows.Forms.FlowDirection.RightToLeft;
-            this.flowLayoutPanel2.Location = new System.Drawing.Point(584, 0);
+            this.flowLayoutPanel2.Location = new System.Drawing.Point(359, 0);
             this.flowLayoutPanel2.Margin = new System.Windows.Forms.Padding(0);
             this.flowLayoutPanel2.Name = "flowLayoutPanel2";
             this.flowLayoutPanel2.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.flowLayoutPanel2.Size = new System.Drawing.Size(337, 100);
+            this.flowLayoutPanel2.Size = new System.Drawing.Size(560, 31);
             this.flowLayoutPanel2.TabIndex = 1;
+            this.flowLayoutPanel2.MouseDown += new System.Windows.Forms.MouseEventHandler(this.MovePanel);
             // 
             // Cerrar
             // 
-            this.Cerrar.Location = new System.Drawing.Point(259, 3);
+            this.Cerrar.BackColor = System.Drawing.Color.White;
+            this.Cerrar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Cerrar.BackgroundImage")));
+            this.Cerrar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.Cerrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Cerrar.ForeColor = System.Drawing.Color.Transparent;
+            this.Cerrar.Location = new System.Drawing.Point(517, 3);
             this.Cerrar.Name = "Cerrar";
-            this.Cerrar.Size = new System.Drawing.Size(75, 23);
+            this.Cerrar.Size = new System.Drawing.Size(40, 23);
             this.Cerrar.TabIndex = 0;
-            this.Cerrar.Text = "Cerrar";
-            this.Cerrar.UseVisualStyleBackColor = true;
+            this.Cerrar.UseVisualStyleBackColor = false;
             this.Cerrar.Click += new System.EventHandler(this.button1_Click);
             // 
             // Agrandar
             // 
-            this.Agrandar.Location = new System.Drawing.Point(178, 3);
+            this.Agrandar.BackColor = System.Drawing.Color.White;
+            this.Agrandar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Agrandar.BackgroundImage")));
+            this.Agrandar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.Agrandar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Agrandar.ForeColor = System.Drawing.Color.Transparent;
+            this.Agrandar.Location = new System.Drawing.Point(471, 3);
             this.Agrandar.Name = "Agrandar";
-            this.Agrandar.Size = new System.Drawing.Size(75, 23);
+            this.Agrandar.Size = new System.Drawing.Size(40, 23);
             this.Agrandar.TabIndex = 1;
-            this.Agrandar.Text = "Agrandar";
-            this.Agrandar.UseVisualStyleBackColor = true;
+            this.Agrandar.UseVisualStyleBackColor = false;
             this.Agrandar.Click += new System.EventHandler(this.Agrandar_click);
+            // 
+            // Desagrandar
+            // 
+            this.Desagrandar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Desagrandar.BackgroundImage")));
+            this.Desagrandar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.Desagrandar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Desagrandar.ForeColor = System.Drawing.Color.Transparent;
+            this.Desagrandar.Location = new System.Drawing.Point(425, 3);
+            this.Desagrandar.Name = "Desagrandar";
+            this.Desagrandar.Size = new System.Drawing.Size(40, 23);
+            this.Desagrandar.TabIndex = 3;
+            this.Desagrandar.UseVisualStyleBackColor = true;
+            this.Desagrandar.Visible = false;
+            this.Desagrandar.Click += new System.EventHandler(this.Desagrandar_Click);
             // 
             // Minimizar
             // 
-            this.Minimizar.Location = new System.Drawing.Point(6, 3);
+            this.Minimizar.BackColor = System.Drawing.Color.White;
+            this.Minimizar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Minimizar.BackgroundImage")));
+            this.Minimizar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.Minimizar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Minimizar.ForeColor = System.Drawing.Color.Transparent;
+            this.Minimizar.Location = new System.Drawing.Point(379, 3);
             this.Minimizar.Name = "Minimizar";
-            this.Minimizar.Size = new System.Drawing.Size(75, 23);
+            this.Minimizar.Size = new System.Drawing.Size(40, 23);
             this.Minimizar.TabIndex = 2;
-            this.Minimizar.Text = "Minimizar";
-            this.Minimizar.UseVisualStyleBackColor = true;
+            this.Minimizar.UseVisualStyleBackColor = false;
             this.Minimizar.Click += new System.EventHandler(this.Minimizar_Click);
+            // 
+            // label3
+            // 
+            this.label3.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.label3.Font = new System.Drawing.Font("Lato Light", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(12, 0);
+            this.label3.Margin = new System.Windows.Forms.Padding(0);
+            this.label3.Name = "label3";
+            this.label3.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.label3.Size = new System.Drawing.Size(347, 31);
+            this.label3.TabIndex = 4;
+            this.label3.Text = "DISTRIBUCION DE PROBABILIDAD";
+            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(22, 43);
+            this.label2.Font = new System.Drawing.Font("Open Sans", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(55, 58);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(53, 13);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "GRAFICA";
+            this.label2.Size = new System.Drawing.Size(368, 28);
+            this.label2.TabIndex = 5;
+            this.label2.Text = "Seleccione la distribucion a resolver:";
+            this.label2.Click += new System.EventHandler(this.label2_Click_1);
             // 
-            // Desagrandar
+            // flowLayoutPanel3
             // 
-            this.Desagrandar.Location = new System.Drawing.Point(87, 3);
-            this.Desagrandar.Name = "Desagrandar";
-            this.Desagrandar.Size = new System.Drawing.Size(85, 23);
-            this.Desagrandar.TabIndex = 3;
-            this.Desagrandar.Text = "Desagrandar";
-            this.Desagrandar.UseVisualStyleBackColor = true;
-            this.Desagrandar.Visible = false;
-            this.Desagrandar.Click += new System.EventHandler(this.Desagrandar_Click);
+            this.flowLayoutPanel3.BackColor = System.Drawing.Color.MidnightBlue;
+            this.flowLayoutPanel3.Controls.Add(this.pictureBox1);
+            this.flowLayoutPanel3.Location = new System.Drawing.Point(174, 137);
+            this.flowLayoutPanel3.Name = "flowLayoutPanel3";
+            this.flowLayoutPanel3.Size = new System.Drawing.Size(249, 221);
+            this.flowLayoutPanel3.TabIndex = 6;
+            // 
+            // flowLayoutPanel4
+            // 
+            this.flowLayoutPanel4.BackColor = System.Drawing.Color.MidnightBlue;
+            this.flowLayoutPanel4.Controls.Add(this.pictureBox2);
+            this.flowLayoutPanel4.Location = new System.Drawing.Point(508, 137);
+            this.flowLayoutPanel4.Name = "flowLayoutPanel4";
+            this.flowLayoutPanel4.Size = new System.Drawing.Size(256, 221);
+            this.flowLayoutPanel4.TabIndex = 7;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pictureBox1.Location = new System.Drawing.Point(3, 3);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(245, 133);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.pictureBox2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pictureBox2.Location = new System.Drawing.Point(3, 3);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(245, 133);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 2;
+            this.pictureBox2.TabStop = false;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(921, 450);
+            this.Controls.Add(this.flowLayoutPanel4);
+            this.Controls.Add(this.flowLayoutPanel3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.flowLayoutPanel1);
             this.Controls.Add(this.label1);
+            this.ForeColor = System.Drawing.SystemColors.Desktop;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Form1";
             this.Text = " ";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.flowLayoutPanel1.ResumeLayout(false);
             this.flowLayoutPanel2.ResumeLayout(false);
+            this.flowLayoutPanel3.ResumeLayout(false);
+            this.flowLayoutPanel4.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -151,11 +242,16 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
         private System.Windows.Forms.Button Cerrar;
-        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel2;
         private System.Windows.Forms.Button Agrandar;
         private System.Windows.Forms.Button Minimizar;
         private System.Windows.Forms.Button Desagrandar;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel3;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel4;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox pictureBox2;
     }
 }
 

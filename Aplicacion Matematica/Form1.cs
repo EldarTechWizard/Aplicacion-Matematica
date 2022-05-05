@@ -61,12 +61,39 @@ namespace Aplicacion_Matematica
             this.WindowState = FormWindowState.Maximized;
             Desagrandar.Visible = true;
             Agrandar.Visible = false;
+            flowLayoutPanel2.Size = new Size(1010, 31);
         }
         private void NormalAction()
         {
             Desagrandar.Visible = false;
             Agrandar.Visible = true;
             this.WindowState = FormWindowState.Normal;
+            flowLayoutPanel2.Size = new Size(560, 31);
+        }
+
+        private void flowLayoutPanel3_Paint(object sender, PaintEventArgs e)
+        {
+            
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label2_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
