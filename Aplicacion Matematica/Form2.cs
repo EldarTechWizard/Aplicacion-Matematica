@@ -3,15 +3,15 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
-using System.Linq;
 using System.Runtime.InteropServices;
+using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Aplicacion_Matematica
 {
-    public partial class Form1 : Form
+    public partial class Form2 : Form
     {
 
         [DllImport("user32.dll", EntryPoint = "ReleaseCapture")]
@@ -19,22 +19,16 @@ namespace Aplicacion_Matematica
 
         [DllImport("user32.DLL", EntryPoint = "SendMessage")]
         private extern static void SendMessage(System.IntPtr hWnd, int wMsg, int wParam, int lParam);
-
-    
-
-        public Form1()
+        public Form2()
         {
             InitializeComponent();
-            this.MaximizedBounds = Screen.FromHandle(this.Handle).WorkingArea;
-            this.Padding = new Padding(2);
         }
-
 
         private void button1_Click(object sender, EventArgs e)
         {
             Close();
         }
-     
+
         private void MovePanel(object sender, MouseEventArgs e)
         {
             ReleaseCapture();
@@ -71,49 +65,7 @@ namespace Aplicacion_Matematica
             flowLayoutPanel2.Size = new Size(560, 31);
         }
 
-        private void flowLayoutPanel3_Paint(object sender, PaintEventArgs e)
-        {
-            
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label2_Click_1(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Form1_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label3_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void flowLayoutPanel3_Paint_1(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void label4_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            Form2 binomial = new Form2();
-            binomial.Show();
-        }
-
-        private void pictureBox2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label5_Click(object sender, EventArgs e)
+        private void Form2_Load(object sender, EventArgs e)
         {
 
         }
