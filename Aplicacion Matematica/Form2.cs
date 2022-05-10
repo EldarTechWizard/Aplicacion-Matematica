@@ -22,6 +22,7 @@ namespace Aplicacion_Matematica
         public Form2()
         {
             InitializeComponent();
+            this.MaximizedBounds = Screen.FromHandle(this.Handle).WorkingArea;
         }
 
         private void button1_Click(object sender, EventArgs e)

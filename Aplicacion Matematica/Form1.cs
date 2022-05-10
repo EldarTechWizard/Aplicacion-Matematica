@@ -14,6 +14,8 @@ namespace Aplicacion_Matematica
     public partial class Form1 : Form
     {
 
+        private Form currentChildForm;
+
         [DllImport("user32.dll", EntryPoint = "ReleaseCapture")]
         private extern static void ReleaseCapture();
 
@@ -25,8 +27,8 @@ namespace Aplicacion_Matematica
         public Form1()
         {
             InitializeComponent();
+            currentChildForm = new Form1();
             this.MaximizedBounds = Screen.FromHandle(this.Handle).WorkingArea;
-            this.Padding = new Padding(2);
         }
 
 
@@ -34,7 +36,18 @@ namespace Aplicacion_Matematica
         {
             Close();
         }
-     
+
+        private void OpenChildForm(Form childForm)
+        {
+            if (currentChildForm != null)
+            {
+                currentChildForm.Close();
+            }
+            
+
+            currentChildForm = childForm;
+            childForm.Show();
+        }     
         private void MovePanel(object sender, MouseEventArgs e)
         {
             ReleaseCapture();
@@ -103,9 +116,7 @@ namespace Aplicacion_Matematica
 
         private void label4_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            Form2 binomial = new Form2();
-            binomial.Show();
+            OpenChildForm(new Form2());
         }
 
         private void pictureBox2_Click(object sender, EventArgs e)
