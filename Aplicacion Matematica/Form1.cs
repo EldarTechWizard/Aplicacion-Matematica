@@ -27,7 +27,6 @@ namespace Aplicacion_Matematica
         public Form1()
         {
             InitializeComponent();
-            currentChildForm = new Form1();
             this.MaximizedBounds = Screen.FromHandle(this.Handle).WorkingArea;
         }
 
@@ -43,11 +42,18 @@ namespace Aplicacion_Matematica
             {
                 currentChildForm.Close();
             }
-            
-
+            if(PanelPrincipal.Visible == true)
+            {
+                PanelPrincipal.Visible = false;
+            }
             currentChildForm = childForm;
+
+            childForm.TopLevel = false;
+
+            PanelDeTrabajo.Controls.Add(childForm);
+            
             childForm.Show();
-        }     
+        }
         private void MovePanel(object sender, MouseEventArgs e)
         {
             ReleaseCapture();
@@ -84,49 +90,9 @@ namespace Aplicacion_Matematica
             flowLayoutPanel2.Size = new Size(560, 31);
         }
 
-        private void flowLayoutPanel3_Paint(object sender, PaintEventArgs e)
-        {
-            
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label2_Click_1(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Form1_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label3_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void flowLayoutPanel3_Paint_1(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void label4_Click(object sender, EventArgs e)
+        private void DistribucionBinomial_text_Click(object sender, EventArgs e)
         {
             OpenChildForm(new Form2());
-        }
-
-        private void pictureBox2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label5_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }
