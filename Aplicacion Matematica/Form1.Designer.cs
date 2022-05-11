@@ -44,7 +44,7 @@
             this.DistribucionBinomial_text = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.label5 = new System.Windows.Forms.Label();
+            this.DistribucionPoisson_text = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.flowLayoutPanel2.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -148,6 +148,7 @@
             this.label3.TabIndex = 4;
             this.label3.Text = "DISTRIBUCION DE PROBABILIDAD";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // panel2
             // 
@@ -229,7 +230,7 @@
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.Silver;
-            this.panel3.Controls.Add(this.label5);
+            this.panel3.Controls.Add(this.DistribucionPoisson_text);
             this.panel3.Controls.Add(this.pictureBox2);
             this.panel3.Location = new System.Drawing.Point(504, 98);
             this.panel3.Name = "panel3";
@@ -237,16 +238,17 @@
             this.panel3.Size = new System.Drawing.Size(372, 270);
             this.panel3.TabIndex = 12;
             // 
-            // label5
+            // DistribucionPoisson_text
             // 
-            this.label5.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.label5.Font = new System.Drawing.Font("Lato", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(25, 204);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(322, 41);
-            this.label5.TabIndex = 3;
-            this.label5.Text = "DISTRIBUCION DE POISSON";
-            this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.DistribucionPoisson_text.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.DistribucionPoisson_text.Font = new System.Drawing.Font("Lato", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DistribucionPoisson_text.Location = new System.Drawing.Point(25, 204);
+            this.DistribucionPoisson_text.Name = "DistribucionPoisson_text";
+            this.DistribucionPoisson_text.Size = new System.Drawing.Size(322, 41);
+            this.DistribucionPoisson_text.TabIndex = 3;
+            this.DistribucionPoisson_text.Text = "DISTRIBUCION DE POISSON";
+            this.DistribucionPoisson_text.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.DistribucionPoisson_text.Click += new System.EventHandler(this.DistribucionPoisson_text_Click);
             // 
             // pictureBox2
             // 
@@ -304,7 +306,7 @@
         private System.Windows.Forms.Label DistribucionBinomial_text;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label DistribucionPoisson_text;
         private System.Windows.Forms.PictureBox pictureBox2;
     }
 }

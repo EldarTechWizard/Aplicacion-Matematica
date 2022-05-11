@@ -94,5 +94,19 @@ namespace Aplicacion_Matematica
         {
             OpenChildForm(new Form2());
         }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+            if (currentChildForm != null)
+            {
+                currentChildForm.Close();
+            }
+            PanelPrincipal.Visible = true;
+        }
+
+        private void DistribucionPoisson_text_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new Dbinomial());
+        }
     }
 }
