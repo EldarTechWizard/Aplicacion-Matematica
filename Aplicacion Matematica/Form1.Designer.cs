@@ -30,30 +30,22 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.label1 = new System.Windows.Forms.Label();
+            this.PanelMenu = new System.Windows.Forms.Panel();
+            this.ButtonDisP = new System.Windows.Forms.Button();
+            this.ButtonDisB = new System.Windows.Forms.Button();
+            this.Title = new System.Windows.Forms.Panel();
+            this.Titulo = new System.Windows.Forms.Label();
+            this.PanelSuperior = new System.Windows.Forms.Panel();
             this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
             this.Cerrar = new System.Windows.Forms.Button();
             this.Agrandar = new System.Windows.Forms.Button();
             this.Desagrandar = new System.Windows.Forms.Button();
             this.Minimizar = new System.Windows.Forms.Button();
-            this.label3 = new System.Windows.Forms.Label();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.PanelDeTrabajo = new System.Windows.Forms.Panel();
-            this.PanelPrincipal = new System.Windows.Forms.Panel();
-            this.label2 = new System.Windows.Forms.Label();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.DistribucionBinomial_text = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.DistribucionPoisson_text = new System.Windows.Forms.Label();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.PanelDerecho = new System.Windows.Forms.Panel();
+            this.PanelMenu.SuspendLayout();
+            this.Title.SuspendLayout();
+            this.PanelSuperior.SuspendLayout();
             this.flowLayoutPanel2.SuspendLayout();
-            this.panel2.SuspendLayout();
-            this.PanelDeTrabajo.SuspendLayout();
-            this.PanelPrincipal.SuspendLayout();
-            this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.panel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -64,6 +56,86 @@
             this.label1.Size = new System.Drawing.Size(0, 13);
             this.label1.TabIndex = 0;
             // 
+            // PanelMenu
+            // 
+            this.PanelMenu.BackColor = System.Drawing.Color.IndianRed;
+            this.PanelMenu.Controls.Add(this.ButtonDisP);
+            this.PanelMenu.Controls.Add(this.ButtonDisB);
+            this.PanelMenu.Controls.Add(this.Title);
+            this.PanelMenu.Dock = System.Windows.Forms.DockStyle.Left;
+            this.PanelMenu.Location = new System.Drawing.Point(5, 5);
+            this.PanelMenu.Name = "PanelMenu";
+            this.PanelMenu.Size = new System.Drawing.Size(294, 645);
+            this.PanelMenu.TabIndex = 12;
+            // 
+            // ButtonDisP
+            // 
+            this.ButtonDisP.BackColor = System.Drawing.Color.DarkSalmon;
+            this.ButtonDisP.Dock = System.Windows.Forms.DockStyle.Top;
+            this.ButtonDisP.FlatAppearance.BorderSize = 0;
+            this.ButtonDisP.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ButtonDisP.Font = new System.Drawing.Font("Lato", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ButtonDisP.ForeColor = System.Drawing.Color.Black;
+            this.ButtonDisP.Location = new System.Drawing.Point(0, 168);
+            this.ButtonDisP.Name = "ButtonDisP";
+            this.ButtonDisP.Size = new System.Drawing.Size(294, 77);
+            this.ButtonDisP.TabIndex = 2;
+            this.ButtonDisP.Text = "Distribucion de poisson";
+            this.ButtonDisP.UseVisualStyleBackColor = false;
+            this.ButtonDisP.Click += new System.EventHandler(this.DistribucionPoisson_text_Click);
+            // 
+            // ButtonDisB
+            // 
+            this.ButtonDisB.BackColor = System.Drawing.Color.Salmon;
+            this.ButtonDisB.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.ButtonDisB.Dock = System.Windows.Forms.DockStyle.Top;
+            this.ButtonDisB.FlatAppearance.BorderSize = 0;
+            this.ButtonDisB.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ButtonDisB.Font = new System.Drawing.Font("Lato", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ButtonDisB.ForeColor = System.Drawing.Color.Black;
+            this.ButtonDisB.Location = new System.Drawing.Point(0, 93);
+            this.ButtonDisB.Name = "ButtonDisB";
+            this.ButtonDisB.Size = new System.Drawing.Size(294, 75);
+            this.ButtonDisB.TabIndex = 1;
+            this.ButtonDisB.Text = "Distribución binomial";
+            this.ButtonDisB.UseVisualStyleBackColor = false;
+            this.ButtonDisB.Click += new System.EventHandler(this.DistribucionBinomial_text_Click);
+            // 
+            // Title
+            // 
+            this.Title.BackColor = System.Drawing.Color.SaddleBrown;
+            this.Title.Controls.Add(this.Titulo);
+            this.Title.Dock = System.Windows.Forms.DockStyle.Top;
+            this.Title.Location = new System.Drawing.Point(0, 0);
+            this.Title.Name = "Title";
+            this.Title.Size = new System.Drawing.Size(294, 93);
+            this.Title.TabIndex = 0;
+            // 
+            // Titulo
+            // 
+            this.Titulo.BackColor = System.Drawing.Color.Coral;
+            this.Titulo.Dock = System.Windows.Forms.DockStyle.Left;
+            this.Titulo.Font = new System.Drawing.Font("Lato", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Titulo.Location = new System.Drawing.Point(0, 0);
+            this.Titulo.Margin = new System.Windows.Forms.Padding(0);
+            this.Titulo.Name = "Titulo";
+            this.Titulo.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.Titulo.Size = new System.Drawing.Size(296, 93);
+            this.Titulo.TabIndex = 5;
+            this.Titulo.Text = "DisGate";
+            this.Titulo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.Titulo.Click += new System.EventHandler(this.label3_Click);
+            // 
+            // PanelSuperior
+            // 
+            this.PanelSuperior.BackColor = System.Drawing.Color.PeachPuff;
+            this.PanelSuperior.Controls.Add(this.flowLayoutPanel2);
+            this.PanelSuperior.Dock = System.Windows.Forms.DockStyle.Top;
+            this.PanelSuperior.Location = new System.Drawing.Point(299, 5);
+            this.PanelSuperior.Name = "PanelSuperior";
+            this.PanelSuperior.Size = new System.Drawing.Size(969, 32);
+            this.PanelSuperior.TabIndex = 13;
+            // 
             // flowLayoutPanel2
             // 
             this.flowLayoutPanel2.Controls.Add(this.Cerrar);
@@ -72,11 +144,11 @@
             this.flowLayoutPanel2.Controls.Add(this.Minimizar);
             this.flowLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Right;
             this.flowLayoutPanel2.FlowDirection = System.Windows.Forms.FlowDirection.RightToLeft;
-            this.flowLayoutPanel2.Location = new System.Drawing.Point(351, 0);
+            this.flowLayoutPanel2.Location = new System.Drawing.Point(780, 0);
             this.flowLayoutPanel2.Margin = new System.Windows.Forms.Padding(0);
             this.flowLayoutPanel2.Name = "flowLayoutPanel2";
             this.flowLayoutPanel2.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.flowLayoutPanel2.Size = new System.Drawing.Size(560, 29);
+            this.flowLayoutPanel2.Size = new System.Drawing.Size(189, 32);
             this.flowLayoutPanel2.TabIndex = 1;
             this.flowLayoutPanel2.MouseDown += new System.Windows.Forms.MouseEventHandler(this.MovePanel);
             // 
@@ -85,9 +157,10 @@
             this.Cerrar.BackColor = System.Drawing.Color.White;
             this.Cerrar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Cerrar.BackgroundImage")));
             this.Cerrar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.Cerrar.Dock = System.Windows.Forms.DockStyle.Top;
             this.Cerrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Cerrar.ForeColor = System.Drawing.Color.Transparent;
-            this.Cerrar.Location = new System.Drawing.Point(517, 3);
+            this.Cerrar.Location = new System.Drawing.Point(146, 3);
             this.Cerrar.Name = "Cerrar";
             this.Cerrar.Size = new System.Drawing.Size(40, 23);
             this.Cerrar.TabIndex = 0;
@@ -101,7 +174,7 @@
             this.Agrandar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.Agrandar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Agrandar.ForeColor = System.Drawing.Color.Transparent;
-            this.Agrandar.Location = new System.Drawing.Point(471, 3);
+            this.Agrandar.Location = new System.Drawing.Point(100, 3);
             this.Agrandar.Name = "Agrandar";
             this.Agrandar.Size = new System.Drawing.Size(40, 23);
             this.Agrandar.TabIndex = 1;
@@ -110,15 +183,16 @@
             // 
             // Desagrandar
             // 
+            this.Desagrandar.BackColor = System.Drawing.Color.White;
             this.Desagrandar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Desagrandar.BackgroundImage")));
             this.Desagrandar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.Desagrandar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Desagrandar.ForeColor = System.Drawing.Color.Transparent;
-            this.Desagrandar.Location = new System.Drawing.Point(425, 3);
+            this.Desagrandar.Location = new System.Drawing.Point(54, 3);
             this.Desagrandar.Name = "Desagrandar";
             this.Desagrandar.Size = new System.Drawing.Size(40, 23);
             this.Desagrandar.TabIndex = 3;
-            this.Desagrandar.UseVisualStyleBackColor = true;
+            this.Desagrandar.UseVisualStyleBackColor = false;
             this.Desagrandar.Visible = false;
             this.Desagrandar.Click += new System.EventHandler(this.Desagrandar_Click);
             // 
@@ -129,161 +203,42 @@
             this.Minimizar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.Minimizar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Minimizar.ForeColor = System.Drawing.Color.Transparent;
-            this.Minimizar.Location = new System.Drawing.Point(379, 3);
+            this.Minimizar.Location = new System.Drawing.Point(8, 3);
             this.Minimizar.Name = "Minimizar";
             this.Minimizar.Size = new System.Drawing.Size(40, 23);
             this.Minimizar.TabIndex = 2;
             this.Minimizar.UseVisualStyleBackColor = false;
             this.Minimizar.Click += new System.EventHandler(this.Minimizar_Click);
             // 
-            // label3
+            // PanelDerecho
             // 
-            this.label3.Dock = System.Windows.Forms.DockStyle.Left;
-            this.label3.Font = new System.Drawing.Font("Lato Light", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(0, 0);
-            this.label3.Margin = new System.Windows.Forms.Padding(0);
-            this.label3.Name = "label3";
-            this.label3.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.label3.Size = new System.Drawing.Size(347, 29);
-            this.label3.TabIndex = 4;
-            this.label3.Text = "DISTRIBUCION DE PROBABILIDAD";
-            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.label3.Click += new System.EventHandler(this.label3_Click);
-            // 
-            // panel2
-            // 
-            this.panel2.Controls.Add(this.flowLayoutPanel2);
-            this.panel2.Controls.Add(this.label3);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel2.Location = new System.Drawing.Point(5, 5);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(911, 29);
-            this.panel2.TabIndex = 9;
-            // 
-            // PanelDeTrabajo
-            // 
-            this.PanelDeTrabajo.Controls.Add(this.PanelPrincipal);
-            this.PanelDeTrabajo.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.PanelDeTrabajo.Location = new System.Drawing.Point(5, 34);
-            this.PanelDeTrabajo.Name = "PanelDeTrabajo";
-            this.PanelDeTrabajo.Size = new System.Drawing.Size(911, 411);
-            this.PanelDeTrabajo.TabIndex = 10;
-            // 
-            // PanelPrincipal
-            // 
-            this.PanelPrincipal.BackColor = System.Drawing.Color.LightGray;
-            this.PanelPrincipal.Controls.Add(this.label2);
-            this.PanelPrincipal.Controls.Add(this.panel1);
-            this.PanelPrincipal.Controls.Add(this.panel3);
-            this.PanelPrincipal.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.PanelPrincipal.Location = new System.Drawing.Point(0, 0);
-            this.PanelPrincipal.Name = "PanelPrincipal";
-            this.PanelPrincipal.Size = new System.Drawing.Size(911, 411);
-            this.PanelPrincipal.TabIndex = 0;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Open Sans", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(35, 43);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(368, 28);
-            this.label2.TabIndex = 10;
-            this.label2.Text = "Seleccione la distribucion a resolver:";
-            // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.Color.Silver;
-            this.panel1.Controls.Add(this.DistribucionBinomial_text);
-            this.panel1.Controls.Add(this.pictureBox1);
-            this.panel1.Location = new System.Drawing.Point(40, 98);
-            this.panel1.Name = "panel1";
-            this.panel1.Padding = new System.Windows.Forms.Padding(25);
-            this.panel1.Size = new System.Drawing.Size(405, 270);
-            this.panel1.TabIndex = 11;
-            // 
-            // DistribucionBinomial_text
-            // 
-            this.DistribucionBinomial_text.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.DistribucionBinomial_text.Font = new System.Drawing.Font("Lato", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.DistribucionBinomial_text.Location = new System.Drawing.Point(25, 204);
-            this.DistribucionBinomial_text.Name = "DistribucionBinomial_text";
-            this.DistribucionBinomial_text.Size = new System.Drawing.Size(355, 41);
-            this.DistribucionBinomial_text.TabIndex = 1;
-            this.DistribucionBinomial_text.Text = "DISTRIBUCION BINOMIAL";
-            this.DistribucionBinomial_text.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.DistribucionBinomial_text.Click += new System.EventHandler(this.DistribucionBinomial_text_Click);
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(25, 25);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(10);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(355, 164);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
-            // 
-            // panel3
-            // 
-            this.panel3.BackColor = System.Drawing.Color.Silver;
-            this.panel3.Controls.Add(this.DistribucionPoisson_text);
-            this.panel3.Controls.Add(this.pictureBox2);
-            this.panel3.Location = new System.Drawing.Point(504, 98);
-            this.panel3.Name = "panel3";
-            this.panel3.Padding = new System.Windows.Forms.Padding(25);
-            this.panel3.Size = new System.Drawing.Size(372, 270);
-            this.panel3.TabIndex = 12;
-            // 
-            // DistribucionPoisson_text
-            // 
-            this.DistribucionPoisson_text.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.DistribucionPoisson_text.Font = new System.Drawing.Font("Lato", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.DistribucionPoisson_text.Location = new System.Drawing.Point(25, 204);
-            this.DistribucionPoisson_text.Name = "DistribucionPoisson_text";
-            this.DistribucionPoisson_text.Size = new System.Drawing.Size(322, 41);
-            this.DistribucionPoisson_text.TabIndex = 3;
-            this.DistribucionPoisson_text.Text = "DISTRIBUCION DE POISSON";
-            this.DistribucionPoisson_text.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.DistribucionPoisson_text.Click += new System.EventHandler(this.DistribucionPoisson_text_Click);
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(25, 25);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(322, 164);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 2;
-            this.pictureBox2.TabStop = false;
+            this.PanelDerecho.BackColor = System.Drawing.Color.RosyBrown;
+            this.PanelDerecho.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.PanelDerecho.Location = new System.Drawing.Point(299, 37);
+            this.PanelDerecho.Name = "PanelDerecho";
+            this.PanelDerecho.Size = new System.Drawing.Size(969, 613);
+            this.PanelDerecho.TabIndex = 14;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(921, 450);
-            this.Controls.Add(this.PanelDeTrabajo);
-            this.Controls.Add(this.panel2);
+            this.ClientSize = new System.Drawing.Size(1273, 655);
+            this.Controls.Add(this.PanelDerecho);
+            this.Controls.Add(this.PanelSuperior);
+            this.Controls.Add(this.PanelMenu);
             this.Controls.Add(this.label1);
             this.ForeColor = System.Drawing.SystemColors.Desktop;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Form1";
             this.Padding = new System.Windows.Forms.Padding(5);
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "     ";
+            this.PanelMenu.ResumeLayout(false);
+            this.Title.ResumeLayout(false);
+            this.PanelSuperior.ResumeLayout(false);
             this.flowLayoutPanel2.ResumeLayout(false);
-            this.panel2.ResumeLayout(false);
-            this.PanelDeTrabajo.ResumeLayout(false);
-            this.PanelPrincipal.ResumeLayout(false);
-            this.PanelPrincipal.PerformLayout();
-            this.panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.panel3.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -292,22 +247,18 @@
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button Cerrar;
+        private System.Windows.Forms.Panel PanelMenu;
+        private System.Windows.Forms.Button ButtonDisP;
+        private System.Windows.Forms.Button ButtonDisB;
+        private System.Windows.Forms.Panel Title;
+        private System.Windows.Forms.Label Titulo;
+        private System.Windows.Forms.Panel PanelSuperior;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel2;
+        private System.Windows.Forms.Button Cerrar;
         private System.Windows.Forms.Button Agrandar;
-        private System.Windows.Forms.Button Minimizar;
         private System.Windows.Forms.Button Desagrandar;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Panel PanelDeTrabajo;
-        private System.Windows.Forms.Panel PanelPrincipal;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Label DistribucionBinomial_text;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.Label DistribucionPoisson_text;
-        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.Button Minimizar;
+        private System.Windows.Forms.Panel PanelDerecho;
     }
 }
 

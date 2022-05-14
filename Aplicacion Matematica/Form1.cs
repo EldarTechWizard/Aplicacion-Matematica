@@ -42,16 +42,13 @@ namespace Aplicacion_Matematica
             {
                 currentChildForm.Close();
             }
-            if(PanelPrincipal.Visible == true)
-            {
-                PanelPrincipal.Visible = false;
-            }
+      
             currentChildForm = childForm;
 
             childForm.TopLevel = false;
 
-            PanelDeTrabajo.Controls.Add(childForm);
-            
+            PanelDerecho.Controls.Add(childForm);
+            childForm.Dock = DockStyle.Fill;
             childForm.Show();
         }
         private void MovePanel(object sender, MouseEventArgs e)
@@ -101,12 +98,17 @@ namespace Aplicacion_Matematica
             {
                 currentChildForm.Close();
             }
-            PanelPrincipal.Visible = true;
+
         }
 
         private void DistribucionPoisson_text_Click(object sender, EventArgs e)
         {
             OpenChildForm(new Dbinomial());
+        }
+
+        private void PanelPrincipal_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }
