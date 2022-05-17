@@ -42,6 +42,7 @@
             this.Desagrandar = new System.Windows.Forms.Button();
             this.Minimizar = new System.Windows.Forms.Button();
             this.PanelDerecho = new System.Windows.Forms.Panel();
+            this.DistribucionNormal_Button = new System.Windows.Forms.Button();
             this.PanelMenu.SuspendLayout();
             this.Title.SuspendLayout();
             this.PanelSuperior.SuspendLayout();
@@ -51,31 +52,32 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(45, 48);
+            this.label1.Location = new System.Drawing.Point(40, 43);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(0, 13);
             this.label1.TabIndex = 0;
             // 
             // PanelMenu
             // 
-            this.PanelMenu.BackColor = System.Drawing.Color.IndianRed;
+            this.PanelMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(119)))), ((int)(((byte)(182)))));
+            this.PanelMenu.Controls.Add(this.DistribucionNormal_Button);
             this.PanelMenu.Controls.Add(this.ButtonDisP);
             this.PanelMenu.Controls.Add(this.ButtonDisB);
             this.PanelMenu.Controls.Add(this.Title);
             this.PanelMenu.Dock = System.Windows.Forms.DockStyle.Left;
-            this.PanelMenu.Location = new System.Drawing.Point(5, 5);
+            this.PanelMenu.Location = new System.Drawing.Point(0, 0);
             this.PanelMenu.Name = "PanelMenu";
-            this.PanelMenu.Size = new System.Drawing.Size(294, 645);
+            this.PanelMenu.Size = new System.Drawing.Size(294, 655);
             this.PanelMenu.TabIndex = 12;
             // 
             // ButtonDisP
             // 
-            this.ButtonDisP.BackColor = System.Drawing.Color.DarkSalmon;
+            this.ButtonDisP.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(62)))), ((int)(((byte)(138)))));
             this.ButtonDisP.Dock = System.Windows.Forms.DockStyle.Top;
             this.ButtonDisP.FlatAppearance.BorderSize = 0;
             this.ButtonDisP.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.ButtonDisP.Font = new System.Drawing.Font("Lato", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ButtonDisP.ForeColor = System.Drawing.Color.Black;
+            this.ButtonDisP.Font = new System.Drawing.Font("Lato", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ButtonDisP.ForeColor = System.Drawing.Color.White;
             this.ButtonDisP.Location = new System.Drawing.Point(0, 168);
             this.ButtonDisP.Name = "ButtonDisP";
             this.ButtonDisP.Size = new System.Drawing.Size(294, 77);
@@ -86,13 +88,13 @@
             // 
             // ButtonDisB
             // 
-            this.ButtonDisB.BackColor = System.Drawing.Color.Salmon;
+            this.ButtonDisB.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(62)))), ((int)(((byte)(138)))));
             this.ButtonDisB.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.ButtonDisB.Dock = System.Windows.Forms.DockStyle.Top;
             this.ButtonDisB.FlatAppearance.BorderSize = 0;
             this.ButtonDisB.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.ButtonDisB.Font = new System.Drawing.Font("Lato", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ButtonDisB.ForeColor = System.Drawing.Color.Black;
+            this.ButtonDisB.Font = new System.Drawing.Font("Lato", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ButtonDisB.ForeColor = System.Drawing.Color.White;
             this.ButtonDisB.Location = new System.Drawing.Point(0, 93);
             this.ButtonDisB.Name = "ButtonDisB";
             this.ButtonDisB.Size = new System.Drawing.Size(294, 75);
@@ -103,19 +105,21 @@
             // 
             // Title
             // 
-            this.Title.BackColor = System.Drawing.Color.SaddleBrown;
+            this.Title.BackColor = System.Drawing.Color.Transparent;
             this.Title.Controls.Add(this.Titulo);
             this.Title.Dock = System.Windows.Forms.DockStyle.Top;
             this.Title.Location = new System.Drawing.Point(0, 0);
             this.Title.Name = "Title";
             this.Title.Size = new System.Drawing.Size(294, 93);
             this.Title.TabIndex = 0;
+            this.Title.Paint += new System.Windows.Forms.PaintEventHandler(this.Title_Paint);
             // 
             // Titulo
             // 
-            this.Titulo.BackColor = System.Drawing.Color.Coral;
+            this.Titulo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(4)))), ((int)(((byte)(94)))));
             this.Titulo.Dock = System.Windows.Forms.DockStyle.Left;
-            this.Titulo.Font = new System.Drawing.Font("Lato", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Titulo.Font = new System.Drawing.Font("Lato", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Titulo.ForeColor = System.Drawing.Color.White;
             this.Titulo.Location = new System.Drawing.Point(0, 0);
             this.Titulo.Margin = new System.Windows.Forms.Padding(0);
             this.Titulo.Name = "Titulo";
@@ -128,12 +132,12 @@
             // 
             // PanelSuperior
             // 
-            this.PanelSuperior.BackColor = System.Drawing.Color.PeachPuff;
+            this.PanelSuperior.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(119)))), ((int)(((byte)(182)))));
             this.PanelSuperior.Controls.Add(this.flowLayoutPanel2);
             this.PanelSuperior.Dock = System.Windows.Forms.DockStyle.Top;
-            this.PanelSuperior.Location = new System.Drawing.Point(299, 5);
+            this.PanelSuperior.Location = new System.Drawing.Point(294, 0);
             this.PanelSuperior.Name = "PanelSuperior";
-            this.PanelSuperior.Size = new System.Drawing.Size(969, 32);
+            this.PanelSuperior.Size = new System.Drawing.Size(979, 32);
             this.PanelSuperior.TabIndex = 13;
             // 
             // flowLayoutPanel2
@@ -144,7 +148,7 @@
             this.flowLayoutPanel2.Controls.Add(this.Minimizar);
             this.flowLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Right;
             this.flowLayoutPanel2.FlowDirection = System.Windows.Forms.FlowDirection.RightToLeft;
-            this.flowLayoutPanel2.Location = new System.Drawing.Point(780, 0);
+            this.flowLayoutPanel2.Location = new System.Drawing.Point(790, 0);
             this.flowLayoutPanel2.Margin = new System.Windows.Forms.Padding(0);
             this.flowLayoutPanel2.Name = "flowLayoutPanel2";
             this.flowLayoutPanel2.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -154,12 +158,12 @@
             // 
             // Cerrar
             // 
-            this.Cerrar.BackColor = System.Drawing.Color.White;
+            this.Cerrar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(119)))), ((int)(((byte)(182)))));
             this.Cerrar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Cerrar.BackgroundImage")));
             this.Cerrar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.Cerrar.Dock = System.Windows.Forms.DockStyle.Top;
             this.Cerrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Cerrar.ForeColor = System.Drawing.Color.Transparent;
+            this.Cerrar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(119)))), ((int)(((byte)(182)))));
             this.Cerrar.Location = new System.Drawing.Point(146, 3);
             this.Cerrar.Name = "Cerrar";
             this.Cerrar.Size = new System.Drawing.Size(40, 23);
@@ -169,11 +173,11 @@
             // 
             // Agrandar
             // 
-            this.Agrandar.BackColor = System.Drawing.Color.White;
+            this.Agrandar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(119)))), ((int)(((byte)(182)))));
             this.Agrandar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Agrandar.BackgroundImage")));
             this.Agrandar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.Agrandar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Agrandar.ForeColor = System.Drawing.Color.Transparent;
+            this.Agrandar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(119)))), ((int)(((byte)(182)))));
             this.Agrandar.Location = new System.Drawing.Point(100, 3);
             this.Agrandar.Name = "Agrandar";
             this.Agrandar.Size = new System.Drawing.Size(40, 23);
@@ -183,11 +187,11 @@
             // 
             // Desagrandar
             // 
-            this.Desagrandar.BackColor = System.Drawing.Color.White;
+            this.Desagrandar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(119)))), ((int)(((byte)(182)))));
             this.Desagrandar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Desagrandar.BackgroundImage")));
             this.Desagrandar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.Desagrandar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Desagrandar.ForeColor = System.Drawing.Color.Transparent;
+            this.Desagrandar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(119)))), ((int)(((byte)(182)))));
             this.Desagrandar.Location = new System.Drawing.Point(54, 3);
             this.Desagrandar.Name = "Desagrandar";
             this.Desagrandar.Size = new System.Drawing.Size(40, 23);
@@ -198,11 +202,11 @@
             // 
             // Minimizar
             // 
-            this.Minimizar.BackColor = System.Drawing.Color.White;
+            this.Minimizar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(119)))), ((int)(((byte)(182)))));
             this.Minimizar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Minimizar.BackgroundImage")));
             this.Minimizar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.Minimizar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Minimizar.ForeColor = System.Drawing.Color.Transparent;
+            this.Minimizar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(119)))), ((int)(((byte)(182)))));
             this.Minimizar.Location = new System.Drawing.Point(8, 3);
             this.Minimizar.Name = "Minimizar";
             this.Minimizar.Size = new System.Drawing.Size(40, 23);
@@ -212,18 +216,35 @@
             // 
             // PanelDerecho
             // 
-            this.PanelDerecho.BackColor = System.Drawing.Color.RosyBrown;
+            this.PanelDerecho.BackColor = System.Drawing.Color.White;
             this.PanelDerecho.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.PanelDerecho.Location = new System.Drawing.Point(299, 37);
+            this.PanelDerecho.Location = new System.Drawing.Point(294, 32);
             this.PanelDerecho.Name = "PanelDerecho";
-            this.PanelDerecho.Size = new System.Drawing.Size(969, 613);
+            this.PanelDerecho.Size = new System.Drawing.Size(979, 623);
             this.PanelDerecho.TabIndex = 14;
+            // 
+            // DistribucionNormal_Button
+            // 
+            this.DistribucionNormal_Button.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(62)))), ((int)(((byte)(138)))));
+            this.DistribucionNormal_Button.Dock = System.Windows.Forms.DockStyle.Top;
+            this.DistribucionNormal_Button.FlatAppearance.BorderSize = 0;
+            this.DistribucionNormal_Button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.DistribucionNormal_Button.Font = new System.Drawing.Font("Lato", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DistribucionNormal_Button.ForeColor = System.Drawing.Color.White;
+            this.DistribucionNormal_Button.Location = new System.Drawing.Point(0, 245);
+            this.DistribucionNormal_Button.Margin = new System.Windows.Forms.Padding(0);
+            this.DistribucionNormal_Button.Name = "DistribucionNormal_Button";
+            this.DistribucionNormal_Button.Size = new System.Drawing.Size(294, 86);
+            this.DistribucionNormal_Button.TabIndex = 3;
+            this.DistribucionNormal_Button.Text = "Distribucion normal";
+            this.DistribucionNormal_Button.UseVisualStyleBackColor = false;
+            this.DistribucionNormal_Button.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.White;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(46)))), ((int)(((byte)(155)))));
             this.ClientSize = new System.Drawing.Size(1273, 655);
             this.Controls.Add(this.PanelDerecho);
             this.Controls.Add(this.PanelSuperior);
@@ -232,7 +253,6 @@
             this.ForeColor = System.Drawing.SystemColors.Desktop;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Form1";
-            this.Padding = new System.Windows.Forms.Padding(5);
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "     ";
             this.PanelMenu.ResumeLayout(false);
@@ -259,6 +279,7 @@
         private System.Windows.Forms.Button Desagrandar;
         private System.Windows.Forms.Button Minimizar;
         private System.Windows.Forms.Panel PanelDerecho;
+        private System.Windows.Forms.Button DistribucionNormal_Button;
     }
 }
 

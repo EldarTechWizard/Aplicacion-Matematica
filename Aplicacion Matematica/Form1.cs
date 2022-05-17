@@ -110,5 +110,15 @@ namespace Aplicacion_Matematica
         {
 
         }
+
+        private void Title_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            OpenChildForm(new Dnormal());
+        }
     }
 }
