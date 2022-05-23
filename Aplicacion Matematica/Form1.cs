@@ -89,7 +89,8 @@ namespace Aplicacion_Matematica
 
         private void DistribucionBinomial_text_Click(object sender, EventArgs e)
         {
-            OpenChildForm(new Form2());
+            OpenChildForm(new Dbinomial());
+            pictureBox1.Visible = false;
         }
 
         private void label3_Click(object sender, EventArgs e)
@@ -97,13 +98,15 @@ namespace Aplicacion_Matematica
             if (currentChildForm != null)
             {
                 currentChildForm.Close();
+                pictureBox1.Visible = true;
             }
 
         }
 
         private void DistribucionPoisson_text_Click(object sender, EventArgs e)
         {
-            OpenChildForm(new Dbinomial());
+            OpenChildForm(new DPoisson());
+            pictureBox1.Visible = false;
         }
 
         private void PanelPrincipal_Paint(object sender, PaintEventArgs e)
@@ -119,6 +122,7 @@ namespace Aplicacion_Matematica
         private void button1_Click_1(object sender, EventArgs e)
         {
             OpenChildForm(new Dnormal());
+            pictureBox1.Visible = false;
         }
     }
 }

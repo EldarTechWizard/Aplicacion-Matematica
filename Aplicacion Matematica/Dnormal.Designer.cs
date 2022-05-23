@@ -28,9 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.label1 = new System.Windows.Forms.Label();
             this.textValor = new System.Windows.Forms.TextBox();
             this.textDesvEs = new System.Windows.Forms.TextBox();
@@ -39,12 +36,10 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.aceptarCalc = new System.Windows.Forms.Button();
-            this.chart1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.label5 = new System.Windows.Forms.Label();
             this.zText = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.chart1)).BeginInit();
+            this.label5 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
@@ -62,7 +57,7 @@
             // textValor
             // 
             this.textValor.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textValor.Location = new System.Drawing.Point(14, 44);
+            this.textValor.Location = new System.Drawing.Point(15, 36);
             this.textValor.Name = "textValor";
             this.textValor.Size = new System.Drawing.Size(256, 27);
             this.textValor.TabIndex = 1;
@@ -76,7 +71,7 @@
             // 
             // textMedia
             // 
-            this.textMedia.Location = new System.Drawing.Point(15, 102);
+            this.textMedia.Location = new System.Drawing.Point(15, 101);
             this.textMedia.Name = "textMedia";
             this.textMedia.Size = new System.Drawing.Size(255, 27);
             this.textMedia.TabIndex = 3;
@@ -86,7 +81,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Lato", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(11, 25);
+            this.label2.Location = new System.Drawing.Point(12, 14);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(43, 18);
             this.label2.TabIndex = 4;
@@ -97,7 +92,7 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Lato", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(11, 80);
+            this.label3.Location = new System.Drawing.Point(14, 79);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(50, 18);
             this.label3.TabIndex = 5;
@@ -108,7 +103,7 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Lato", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(11, 142);
+            this.label4.Location = new System.Drawing.Point(12, 142);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(143, 18);
             this.label4.TabIndex = 6;
@@ -128,23 +123,6 @@
             this.aceptarCalc.Text = "Calcular ->";
             this.aceptarCalc.UseVisualStyleBackColor = false;
             this.aceptarCalc.Click += new System.EventHandler(this.aceptarCalc_Click);
-            // 
-            // chart1
-            // 
-            chartArea2.Name = "ChartArea1";
-            this.chart1.ChartAreas.Add(chartArea2);
-            legend2.Name = "Legend1";
-            this.chart1.Legends.Add(legend2);
-            this.chart1.Location = new System.Drawing.Point(412, 23);
-            this.chart1.Name = "chart1";
-            this.chart1.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Excel;
-            series2.ChartArea = "ChartArea1";
-            series2.Legend = "Legend1";
-            series2.Name = "Series1";
-            this.chart1.Series.Add(series2);
-            this.chart1.Size = new System.Drawing.Size(532, 485);
-            this.chart1.TabIndex = 8;
-            this.chart1.Text = "chart1";
             // 
             // panel1
             // 
@@ -173,25 +151,26 @@
             this.panel2.Size = new System.Drawing.Size(292, 88);
             this.panel2.TabIndex = 10;
             // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Lato", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(19, 14);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(77, 18);
-            this.label5.TabIndex = 0;
-            this.label5.Text = "Valor de Z";
-            // 
             // zText
             // 
             this.zText.BackColor = System.Drawing.Color.White;
+            this.zText.Font = new System.Drawing.Font("Lato", 12F);
             this.zText.Location = new System.Drawing.Point(19, 44);
             this.zText.Name = "zText";
             this.zText.Padding = new System.Windows.Forms.Padding(5);
             this.zText.Size = new System.Drawing.Size(251, 22);
             this.zText.TabIndex = 1;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Lato", 11.25F);
+            this.label5.ForeColor = System.Drawing.Color.White;
+            this.label5.Location = new System.Drawing.Point(19, 14);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(74, 18);
+            this.label5.TabIndex = 0;
+            this.label5.Text = "Valor de Z";
             // 
             // Dnormal
             // 
@@ -201,12 +180,10 @@
             this.ClientSize = new System.Drawing.Size(979, 623);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.chart1);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Dnormal";
             this.Text = "Dnormal";
-            ((System.ComponentModel.ISupportInitialize)(this.chart1)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
@@ -226,7 +203,6 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button aceptarCalc;
-        private System.Windows.Forms.DataVisualization.Charting.Chart chart1;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label zText;

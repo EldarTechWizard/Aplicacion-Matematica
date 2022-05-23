@@ -31,6 +31,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.label1 = new System.Windows.Forms.Label();
             this.PanelMenu = new System.Windows.Forms.Panel();
+            this.DistribucionNormal_Button = new System.Windows.Forms.Button();
             this.ButtonDisP = new System.Windows.Forms.Button();
             this.ButtonDisB = new System.Windows.Forms.Button();
             this.Title = new System.Windows.Forms.Panel();
@@ -42,11 +43,13 @@
             this.Desagrandar = new System.Windows.Forms.Button();
             this.Minimizar = new System.Windows.Forms.Button();
             this.PanelDerecho = new System.Windows.Forms.Panel();
-            this.DistribucionNormal_Button = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.PanelMenu.SuspendLayout();
             this.Title.SuspendLayout();
             this.PanelSuperior.SuspendLayout();
             this.flowLayoutPanel2.SuspendLayout();
+            this.PanelDerecho.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -70,6 +73,23 @@
             this.PanelMenu.Size = new System.Drawing.Size(294, 655);
             this.PanelMenu.TabIndex = 12;
             // 
+            // DistribucionNormal_Button
+            // 
+            this.DistribucionNormal_Button.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(62)))), ((int)(((byte)(138)))));
+            this.DistribucionNormal_Button.Dock = System.Windows.Forms.DockStyle.Top;
+            this.DistribucionNormal_Button.FlatAppearance.BorderSize = 0;
+            this.DistribucionNormal_Button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.DistribucionNormal_Button.Font = new System.Drawing.Font("Lato", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DistribucionNormal_Button.ForeColor = System.Drawing.Color.White;
+            this.DistribucionNormal_Button.Location = new System.Drawing.Point(0, 248);
+            this.DistribucionNormal_Button.Margin = new System.Windows.Forms.Padding(0);
+            this.DistribucionNormal_Button.Name = "DistribucionNormal_Button";
+            this.DistribucionNormal_Button.Size = new System.Drawing.Size(294, 86);
+            this.DistribucionNormal_Button.TabIndex = 3;
+            this.DistribucionNormal_Button.Text = "Distribucion normal";
+            this.DistribucionNormal_Button.UseVisualStyleBackColor = false;
+            this.DistribucionNormal_Button.Click += new System.EventHandler(this.button1_Click_1);
+            // 
             // ButtonDisP
             // 
             this.ButtonDisP.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(62)))), ((int)(((byte)(138)))));
@@ -78,7 +98,7 @@
             this.ButtonDisP.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.ButtonDisP.Font = new System.Drawing.Font("Lato", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ButtonDisP.ForeColor = System.Drawing.Color.White;
-            this.ButtonDisP.Location = new System.Drawing.Point(0, 168);
+            this.ButtonDisP.Location = new System.Drawing.Point(0, 171);
             this.ButtonDisP.Name = "ButtonDisP";
             this.ButtonDisP.Size = new System.Drawing.Size(294, 77);
             this.ButtonDisP.TabIndex = 2;
@@ -95,7 +115,7 @@
             this.ButtonDisB.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.ButtonDisB.Font = new System.Drawing.Font("Lato", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ButtonDisB.ForeColor = System.Drawing.Color.White;
-            this.ButtonDisB.Location = new System.Drawing.Point(0, 93);
+            this.ButtonDisB.Location = new System.Drawing.Point(0, 96);
             this.ButtonDisB.Name = "ButtonDisB";
             this.ButtonDisB.Size = new System.Drawing.Size(294, 75);
             this.ButtonDisB.TabIndex = 1;
@@ -110,7 +130,7 @@
             this.Title.Dock = System.Windows.Forms.DockStyle.Top;
             this.Title.Location = new System.Drawing.Point(0, 0);
             this.Title.Name = "Title";
-            this.Title.Size = new System.Drawing.Size(294, 93);
+            this.Title.Size = new System.Drawing.Size(294, 96);
             this.Title.TabIndex = 0;
             this.Title.Paint += new System.Windows.Forms.PaintEventHandler(this.Title_Paint);
             // 
@@ -124,7 +144,7 @@
             this.Titulo.Margin = new System.Windows.Forms.Padding(0);
             this.Titulo.Name = "Titulo";
             this.Titulo.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.Titulo.Size = new System.Drawing.Size(296, 93);
+            this.Titulo.Size = new System.Drawing.Size(296, 96);
             this.Titulo.TabIndex = 5;
             this.Titulo.Text = "DisGate";
             this.Titulo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -139,6 +159,7 @@
             this.PanelSuperior.Name = "PanelSuperior";
             this.PanelSuperior.Size = new System.Drawing.Size(979, 32);
             this.PanelSuperior.TabIndex = 13;
+            this.PanelSuperior.MouseDown += new System.Windows.Forms.MouseEventHandler(this.MovePanel);
             // 
             // flowLayoutPanel2
             // 
@@ -217,28 +238,22 @@
             // PanelDerecho
             // 
             this.PanelDerecho.BackColor = System.Drawing.Color.White;
+            this.PanelDerecho.Controls.Add(this.pictureBox1);
             this.PanelDerecho.Dock = System.Windows.Forms.DockStyle.Fill;
             this.PanelDerecho.Location = new System.Drawing.Point(294, 32);
             this.PanelDerecho.Name = "PanelDerecho";
             this.PanelDerecho.Size = new System.Drawing.Size(979, 623);
             this.PanelDerecho.TabIndex = 14;
             // 
-            // DistribucionNormal_Button
+            // pictureBox1
             // 
-            this.DistribucionNormal_Button.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(62)))), ((int)(((byte)(138)))));
-            this.DistribucionNormal_Button.Dock = System.Windows.Forms.DockStyle.Top;
-            this.DistribucionNormal_Button.FlatAppearance.BorderSize = 0;
-            this.DistribucionNormal_Button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.DistribucionNormal_Button.Font = new System.Drawing.Font("Lato", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.DistribucionNormal_Button.ForeColor = System.Drawing.Color.White;
-            this.DistribucionNormal_Button.Location = new System.Drawing.Point(0, 245);
-            this.DistribucionNormal_Button.Margin = new System.Windows.Forms.Padding(0);
-            this.DistribucionNormal_Button.Name = "DistribucionNormal_Button";
-            this.DistribucionNormal_Button.Size = new System.Drawing.Size(294, 86);
-            this.DistribucionNormal_Button.TabIndex = 3;
-            this.DistribucionNormal_Button.Text = "Distribucion normal";
-            this.DistribucionNormal_Button.UseVisualStyleBackColor = false;
-            this.DistribucionNormal_Button.Click += new System.EventHandler(this.button1_Click_1);
+            this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox1.Location = new System.Drawing.Point(371, 153);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(264, 232);
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
             // 
             // Form1
             // 
@@ -259,6 +274,8 @@
             this.Title.ResumeLayout(false);
             this.PanelSuperior.ResumeLayout(false);
             this.flowLayoutPanel2.ResumeLayout(false);
+            this.PanelDerecho.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -280,6 +297,7 @@
         private System.Windows.Forms.Button Minimizar;
         private System.Windows.Forms.Panel PanelDerecho;
         private System.Windows.Forms.Button DistribucionNormal_Button;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
 
