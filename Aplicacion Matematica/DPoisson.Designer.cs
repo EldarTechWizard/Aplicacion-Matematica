@@ -164,13 +164,13 @@
             this.panel3.Font = new System.Drawing.Font("Lato", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.panel3.Location = new System.Drawing.Point(554, 162);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(338, 312);
+            this.panel3.Size = new System.Drawing.Size(338, 315);
             this.panel3.TabIndex = 24;
             // 
             // textVarianza
             // 
             this.textVarianza.BackColor = System.Drawing.Color.White;
-            this.textVarianza.Location = new System.Drawing.Point(27, 258);
+            this.textVarianza.Location = new System.Drawing.Point(27, 259);
             this.textVarianza.Name = "textVarianza";
             this.textVarianza.Size = new System.Drawing.Size(284, 23);
             this.textVarianza.TabIndex = 6;
@@ -188,7 +188,7 @@
             // textDesv
             // 
             this.textDesv.BackColor = System.Drawing.Color.White;
-            this.textDesv.Location = new System.Drawing.Point(27, 187);
+            this.textDesv.Location = new System.Drawing.Point(27, 188);
             this.textDesv.Name = "textDesv";
             this.textDesv.Size = new System.Drawing.Size(284, 23);
             this.textDesv.TabIndex = 4;

@@ -64,5 +64,15 @@ namespace Aplicacion_Matematica
         {
 
         }
+
+        private void button3_Click(object sender, EventArgs e)//Derecha
+        {
+            
+        }
+
+        private void button2_Click(object sender, EventArgs e)//Izquierda
+        {
+
+        }
     }
 }
