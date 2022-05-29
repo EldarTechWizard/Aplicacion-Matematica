@@ -124,5 +124,14 @@ namespace Aplicacion_Matematica
             OpenChildForm(new Dnormal());
             pictureBox1.Visible = false;
         }
+
+        private void DistribucionNormal_Button_MouseHover(object sender, EventArgs e)
+        {
+
+        }
+
+      
+
+       
     }
 }

@@ -62,7 +62,7 @@
             // 
             // PanelMenu
             // 
-            this.PanelMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(119)))), ((int)(((byte)(182)))));
+            this.PanelMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(62)))), ((int)(((byte)(138)))));
             this.PanelMenu.Controls.Add(this.DistribucionNormal_Button);
             this.PanelMenu.Controls.Add(this.ButtonDisP);
             this.PanelMenu.Controls.Add(this.ButtonDisB);
@@ -76,50 +76,67 @@
             // DistribucionNormal_Button
             // 
             this.DistribucionNormal_Button.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(62)))), ((int)(((byte)(138)))));
+            this.DistribucionNormal_Button.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.DistribucionNormal_Button.Cursor = System.Windows.Forms.Cursors.Hand;
             this.DistribucionNormal_Button.Dock = System.Windows.Forms.DockStyle.Top;
+            this.DistribucionNormal_Button.FlatAppearance.BorderColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.DistribucionNormal_Button.FlatAppearance.BorderSize = 0;
             this.DistribucionNormal_Button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.DistribucionNormal_Button.Font = new System.Drawing.Font("Lato", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DistribucionNormal_Button.Font = new System.Drawing.Font("Lato", 16F);
             this.DistribucionNormal_Button.ForeColor = System.Drawing.Color.White;
-            this.DistribucionNormal_Button.Location = new System.Drawing.Point(0, 248);
+            this.DistribucionNormal_Button.Image = ((System.Drawing.Image)(resources.GetObject("DistribucionNormal_Button.Image")));
+            this.DistribucionNormal_Button.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.DistribucionNormal_Button.Location = new System.Drawing.Point(0, 356);
             this.DistribucionNormal_Button.Margin = new System.Windows.Forms.Padding(0);
             this.DistribucionNormal_Button.Name = "DistribucionNormal_Button";
-            this.DistribucionNormal_Button.Size = new System.Drawing.Size(294, 86);
-            this.DistribucionNormal_Button.TabIndex = 3;
+            this.DistribucionNormal_Button.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.DistribucionNormal_Button.Size = new System.Drawing.Size(294, 130);
+            this.DistribucionNormal_Button.TabIndex = 6;
             this.DistribucionNormal_Button.Text = "Distribucion normal";
+            this.DistribucionNormal_Button.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
             this.DistribucionNormal_Button.UseVisualStyleBackColor = false;
             this.DistribucionNormal_Button.Click += new System.EventHandler(this.button1_Click_1);
+            this.DistribucionNormal_Button.MouseHover += new System.EventHandler(this.DistribucionNormal_Button_MouseHover);
             // 
             // ButtonDisP
             // 
             this.ButtonDisP.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(62)))), ((int)(((byte)(138)))));
+            this.ButtonDisP.Cursor = System.Windows.Forms.Cursors.Hand;
             this.ButtonDisP.Dock = System.Windows.Forms.DockStyle.Top;
             this.ButtonDisP.FlatAppearance.BorderSize = 0;
             this.ButtonDisP.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.ButtonDisP.Font = new System.Drawing.Font("Lato", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ButtonDisP.Font = new System.Drawing.Font("Lato", 16F);
             this.ButtonDisP.ForeColor = System.Drawing.Color.White;
-            this.ButtonDisP.Location = new System.Drawing.Point(0, 171);
+            this.ButtonDisP.Image = ((System.Drawing.Image)(resources.GetObject("ButtonDisP.Image")));
+            this.ButtonDisP.Location = new System.Drawing.Point(0, 226);
             this.ButtonDisP.Name = "ButtonDisP";
-            this.ButtonDisP.Size = new System.Drawing.Size(294, 77);
+            this.ButtonDisP.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.ButtonDisP.Size = new System.Drawing.Size(294, 130);
             this.ButtonDisP.TabIndex = 2;
             this.ButtonDisP.Text = "Distribucion de poisson";
+            this.ButtonDisP.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
             this.ButtonDisP.UseVisualStyleBackColor = false;
             this.ButtonDisP.Click += new System.EventHandler(this.DistribucionPoisson_text_Click);
             // 
             // ButtonDisB
             // 
             this.ButtonDisB.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(62)))), ((int)(((byte)(138)))));
-            this.ButtonDisB.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.ButtonDisB.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.ButtonDisB.Cursor = System.Windows.Forms.Cursors.Hand;
             this.ButtonDisB.Dock = System.Windows.Forms.DockStyle.Top;
             this.ButtonDisB.FlatAppearance.BorderSize = 0;
             this.ButtonDisB.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.ButtonDisB.Font = new System.Drawing.Font("Lato", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ButtonDisB.Font = new System.Drawing.Font("Lato", 16F);
             this.ButtonDisB.ForeColor = System.Drawing.Color.White;
+            this.ButtonDisB.Image = ((System.Drawing.Image)(resources.GetObject("ButtonDisB.Image")));
             this.ButtonDisB.Location = new System.Drawing.Point(0, 96);
             this.ButtonDisB.Name = "ButtonDisB";
-            this.ButtonDisB.Size = new System.Drawing.Size(294, 75);
+            this.ButtonDisB.Padding = new System.Windows.Forms.Padding(10);
+            this.ButtonDisB.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.ButtonDisB.Size = new System.Drawing.Size(294, 130);
             this.ButtonDisB.TabIndex = 1;
             this.ButtonDisB.Text = "Distribución binomial";
+            this.ButtonDisB.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
             this.ButtonDisB.UseVisualStyleBackColor = false;
             this.ButtonDisB.Click += new System.EventHandler(this.DistribucionBinomial_text_Click);
             // 
@@ -137,6 +154,7 @@
             // Titulo
             // 
             this.Titulo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(4)))), ((int)(((byte)(94)))));
+            this.Titulo.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Titulo.Dock = System.Windows.Forms.DockStyle.Left;
             this.Titulo.Font = new System.Drawing.Font("Lato", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Titulo.ForeColor = System.Drawing.Color.White;
@@ -296,8 +314,8 @@
         private System.Windows.Forms.Button Desagrandar;
         private System.Windows.Forms.Button Minimizar;
         private System.Windows.Forms.Panel PanelDerecho;
-        private System.Windows.Forms.Button DistribucionNormal_Button;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Button DistribucionNormal_Button;
     }
 }
 

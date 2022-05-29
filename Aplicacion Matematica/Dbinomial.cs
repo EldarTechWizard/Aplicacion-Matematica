@@ -38,10 +38,10 @@ namespace Aplicacion_Matematica
 
 
 		//rdtr programa saca resultados xd
-			
-		
+
+
 		private void button1_Click(object sender, EventArgs e)
-        {
+		{
 			double n = 0, x = 0, N = 2;
 			double p = 0;
 
@@ -60,7 +60,7 @@ namespace Aplicacion_Matematica
 
 			double answer = 0;
 
-			answer = ((fact.factorial(n) / ( fact.factorial(x) * fact.factorial(n - x) )) * p_1 * q_1 * 100);
+			answer = ((fact.factorial(n) / (fact.factorial(x) * fact.factorial(n - x))) * p_1 * q_1 * 100);
 
 			if (x < n1)
 			{
@@ -88,7 +88,17 @@ namespace Aplicacion_Matematica
 
 		}
 
-        private void label5_Click(object sender, EventArgs e)
+		private void label5_Click(object sender, EventArgs e)
+		{
+
+		}
+
+        private void controlText1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
         {
 
         }

@@ -68,5 +68,10 @@ namespace Aplicacion_Matematica
             zText.Text = z.ToString();
 
         }
+
+        private void zText_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
