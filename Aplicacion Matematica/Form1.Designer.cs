@@ -79,14 +79,14 @@
             this.DistribucionNormal_Button.Dock = System.Windows.Forms.DockStyle.Top;
             this.DistribucionNormal_Button.FlatAppearance.BorderSize = 0;
             this.DistribucionNormal_Button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.DistribucionNormal_Button.Font = new System.Drawing.Font("Lato", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DistribucionNormal_Button.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.DistribucionNormal_Button.ForeColor = System.Drawing.Color.White;
             this.DistribucionNormal_Button.Location = new System.Drawing.Point(0, 248);
             this.DistribucionNormal_Button.Margin = new System.Windows.Forms.Padding(0);
             this.DistribucionNormal_Button.Name = "DistribucionNormal_Button";
             this.DistribucionNormal_Button.Size = new System.Drawing.Size(294, 86);
             this.DistribucionNormal_Button.TabIndex = 3;
-            this.DistribucionNormal_Button.Text = "Distribucion normal";
+            this.DistribucionNormal_Button.Text = "Distribución normal";
             this.DistribucionNormal_Button.UseVisualStyleBackColor = false;
             this.DistribucionNormal_Button.Click += new System.EventHandler(this.button1_Click_1);
             // 
@@ -96,13 +96,13 @@
             this.ButtonDisP.Dock = System.Windows.Forms.DockStyle.Top;
             this.ButtonDisP.FlatAppearance.BorderSize = 0;
             this.ButtonDisP.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.ButtonDisP.Font = new System.Drawing.Font("Lato", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ButtonDisP.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ButtonDisP.ForeColor = System.Drawing.Color.White;
             this.ButtonDisP.Location = new System.Drawing.Point(0, 171);
             this.ButtonDisP.Name = "ButtonDisP";
             this.ButtonDisP.Size = new System.Drawing.Size(294, 77);
             this.ButtonDisP.TabIndex = 2;
-            this.ButtonDisP.Text = "Distribucion de poisson";
+            this.ButtonDisP.Text = "Distribución de poisson";
             this.ButtonDisP.UseVisualStyleBackColor = false;
             this.ButtonDisP.Click += new System.EventHandler(this.DistribucionPoisson_text_Click);
             // 
@@ -113,7 +113,7 @@
             this.ButtonDisB.Dock = System.Windows.Forms.DockStyle.Top;
             this.ButtonDisB.FlatAppearance.BorderSize = 0;
             this.ButtonDisB.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.ButtonDisB.Font = new System.Drawing.Font("Lato", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ButtonDisB.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ButtonDisB.ForeColor = System.Drawing.Color.White;
             this.ButtonDisB.Location = new System.Drawing.Point(0, 96);
             this.ButtonDisB.Name = "ButtonDisB";
@@ -138,7 +138,7 @@
             // 
             this.Titulo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(4)))), ((int)(((byte)(94)))));
             this.Titulo.Dock = System.Windows.Forms.DockStyle.Left;
-            this.Titulo.Font = new System.Drawing.Font("Lato", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Titulo.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Titulo.ForeColor = System.Drawing.Color.White;
             this.Titulo.Location = new System.Drawing.Point(0, 0);
             this.Titulo.Margin = new System.Windows.Forms.Padding(0);

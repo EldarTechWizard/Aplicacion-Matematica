@@ -61,9 +61,9 @@
             label3.ForeColor = System.Drawing.Color.White;
             label3.Location = new System.Drawing.Point(19, 23);
             label3.Name = "label3";
-            label3.Size = new System.Drawing.Size(210, 18);
+            label3.Size = new System.Drawing.Size(215, 18);
             label3.TabIndex = 0;
-            label3.Text = "(x) Numero de exitos deseados";
+            label3.Text = "(x) Número de éxitos deseados";
             // 
             // label1
             // 
@@ -80,7 +80,7 @@
             this.panel1.Controls.Add(this.panel2);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel1.Font = new System.Drawing.Font("Lato", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.panel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(979, 623);
@@ -124,7 +124,7 @@
             this.label10.ForeColor = System.Drawing.Color.White;
             this.label10.Location = new System.Drawing.Point(4, 5);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(162, 18);
+            this.label10.Size = new System.Drawing.Size(163, 18);
             this.label10.TabIndex = 0;
             this.label10.Text = "Probabilidad de fracaso";
             // 
@@ -144,7 +144,8 @@
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(144, 18);
             this.label8.TabIndex = 3;
-            this.label8.Text = "Desviacion Estandar";
+            this.label8.Text = "Desviación Estándar";
+            this.label8.Click += new System.EventHandler(this.label8_Click);
             // 
             // label7
             // 
@@ -152,7 +153,7 @@
             this.label7.ForeColor = System.Drawing.Color.White;
             this.label7.Location = new System.Drawing.Point(26, 51);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(50, 18);
+            this.label7.Size = new System.Drawing.Size(48, 18);
             this.label7.TabIndex = 2;
             this.label7.Text = "Media";
             // 
@@ -170,9 +171,9 @@
             this.textTitle.ForeColor = System.Drawing.Color.White;
             this.textTitle.Location = new System.Drawing.Point(26, 20);
             this.textTitle.Name = "textTitle";
-            this.textTitle.Size = new System.Drawing.Size(155, 18);
+            this.textTitle.Size = new System.Drawing.Size(152, 18);
             this.textTitle.TabIndex = 0;
-            this.textTitle.Text = "Para poblacion infinita";
+            this.textTitle.Text = "Para población infinita";
             // 
             // panel2
             // 
@@ -184,7 +185,7 @@
             this.panel2.Controls.Add(this.label4);
             this.panel2.Controls.Add(this.xText);
             this.panel2.Controls.Add(label3);
-            this.panel2.Font = new System.Drawing.Font("Lato", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.panel2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.panel2.Location = new System.Drawing.Point(56, 113);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(364, 290);
@@ -195,13 +196,13 @@
             this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(150)))), ((int)(((byte)(199)))));
             this.button1.FlatAppearance.BorderSize = 0;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Lato Black", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.White;
             this.button1.Location = new System.Drawing.Point(22, 233);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(319, 38);
             this.button1.TabIndex = 6;
-            this.button1.Text = "Aceptar ->";
+            this.button1.Text = "Aceptar";
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
@@ -209,7 +210,7 @@
             // 
             this.pText.Location = new System.Drawing.Point(22, 181);
             this.pText.Name = "pText";
-            this.pText.Size = new System.Drawing.Size(319, 25);
+            this.pText.Size = new System.Drawing.Size(319, 24);
             this.pText.TabIndex = 5;
             // 
             // label5
@@ -218,16 +219,16 @@
             this.label5.ForeColor = System.Drawing.Color.White;
             this.label5.Location = new System.Drawing.Point(19, 160);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(168, 18);
+            this.label5.Size = new System.Drawing.Size(166, 18);
             this.label5.TabIndex = 4;
-            this.label5.Text = "(p) Probabilidad de exito";
+            this.label5.Text = "(p) Probabilidad de éxito";
             this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
             // nText
             // 
             this.nText.Location = new System.Drawing.Point(22, 114);
             this.nText.Name = "nText";
-            this.nText.Size = new System.Drawing.Size(319, 25);
+            this.nText.Size = new System.Drawing.Size(319, 24);
             this.nText.TabIndex = 3;
             // 
             // label4
@@ -235,15 +236,15 @@
             this.label4.ForeColor = System.Drawing.Color.White;
             this.label4.Location = new System.Drawing.Point(19, 90);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(322, 21);
+            this.label4.Size = new System.Drawing.Size(342, 21);
             this.label4.TabIndex = 2;
-            this.label4.Text = "(n) Numero de veces que se realiza la operacion";
+            this.label4.Text = "(n) Número de veces que se realiza la operación";
             // 
             // xText
             // 
             this.xText.Location = new System.Drawing.Point(22, 44);
             this.xText.Name = "xText";
-            this.xText.Size = new System.Drawing.Size(319, 25);
+            this.xText.Size = new System.Drawing.Size(319, 24);
             this.xText.TabIndex = 1;
             // 
             // label2
@@ -254,7 +255,7 @@
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(190, 25);
             this.label2.TabIndex = 21;
-            this.label2.Text = "Distribucion binomial";
+            this.label2.Text = "Distribución binomial";
             // 
             // Dbinomial
             // 
