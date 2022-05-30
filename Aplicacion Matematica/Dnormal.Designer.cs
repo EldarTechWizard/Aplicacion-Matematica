@@ -47,10 +47,10 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(40, 23);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(171, 24);
+            this.label1.Size = new System.Drawing.Size(196, 25);
             this.label1.TabIndex = 0;
             this.label1.Text = "Distribución normal";
             // 
@@ -105,9 +105,9 @@
             this.label4.ForeColor = System.Drawing.Color.White;
             this.label4.Location = new System.Drawing.Point(12, 142);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(142, 18);
+            this.label4.Size = new System.Drawing.Size(165, 18);
             this.label4.TabIndex = 6;
-            this.label4.Text = "Desviación estándar";
+            this.label4.Text = "(σ) Desviación estándar";
             // 
             // aceptarCalc
             // 

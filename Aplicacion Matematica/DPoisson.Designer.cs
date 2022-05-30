@@ -51,10 +51,10 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(60, 36);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(143, 18);
+            this.label1.Size = new System.Drawing.Size(206, 25);
             this.label1.TabIndex = 1;
             this.label1.Text = "Distribucion poisson";
             // 
@@ -88,9 +88,10 @@
             this.label4.ForeColor = System.Drawing.Color.White;
             this.label4.Location = new System.Drawing.Point(33, 75);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(164, 18);
+            this.label4.Size = new System.Drawing.Size(185, 18);
             this.label4.TabIndex = 3;
-            this.label4.Text = "Número de ocurrencias";
+            this.label4.Text = "(x) Número de ocurrencias";
+            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // Panek
             // 
@@ -187,9 +188,9 @@
             this.label8.ForeColor = System.Drawing.Color.White;
             this.label8.Location = new System.Drawing.Point(24, 159);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(144, 18);
+            this.label8.Size = new System.Drawing.Size(167, 18);
             this.label8.TabIndex = 3;
-            this.label8.Text = "Desviación Estándar";
+            this.label8.Text = "(σ) Desviación Estándar";
             this.label8.Click += new System.EventHandler(this.label8_Click);
             // 
             // label7

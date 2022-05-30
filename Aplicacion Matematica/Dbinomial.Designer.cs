@@ -142,9 +142,9 @@
             this.label8.ForeColor = System.Drawing.Color.White;
             this.label8.Location = new System.Drawing.Point(24, 113);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(144, 18);
+            this.label8.Size = new System.Drawing.Size(167, 18);
             this.label8.TabIndex = 3;
-            this.label8.Text = "Desviación Estándar";
+            this.label8.Text = "(σ) Desviación Estándar";
             this.label8.Click += new System.EventHandler(this.label8_Click);
             // 
             // label7
@@ -250,10 +250,10 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(51, 50);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(190, 25);
+            this.label2.Size = new System.Drawing.Size(211, 25);
             this.label2.TabIndex = 21;
             this.label2.Text = "Distribución binomial";
             // 
