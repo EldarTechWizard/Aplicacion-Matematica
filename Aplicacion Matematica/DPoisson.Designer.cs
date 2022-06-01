@@ -46,10 +46,13 @@
             this.textMedia = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.label6 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
             this.label11 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.textVac = new System.Windows.Forms.Label();
+            this.textVac2 = new System.Windows.Forms.Label();
             this.Panek.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -75,7 +78,7 @@
             this.button1.FlatAppearance.BorderSize = 0;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(36, 165);
+            this.button1.Location = new System.Drawing.Point(36, 180);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(259, 32);
             this.button1.TabIndex = 0;
@@ -89,23 +92,25 @@
             this.label2.ForeColor = System.Drawing.Color.White;
             this.label2.Location = new System.Drawing.Point(34, 20);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(64, 18);
+            this.label2.Size = new System.Drawing.Size(85, 18);
             this.label2.TabIndex = 1;
-            this.label2.Text = "Lambda:";
+            this.label2.Text = "(λ) Lambda:";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(34, 92);
+            this.label4.Location = new System.Drawing.Point(34, 97);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(157, 18);
+            this.label4.Size = new System.Drawing.Size(178, 18);
             this.label4.TabIndex = 3;
-            this.label4.Text = "Numero de ocurrencia:";
+            this.label4.Text = "(x) Numero de ocurrencia:";
             // 
             // Panek
             // 
             this.Panek.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(119)))), ((int)(((byte)(182)))));
+            this.Panek.Controls.Add(this.textVac2);
+            this.Panek.Controls.Add(this.textVac);
             this.Panek.Controls.Add(this.textOcu);
             this.Panek.Controls.Add(this.textLambda);
             this.Panek.Controls.Add(this.label4);
@@ -114,12 +119,12 @@
             this.Panek.Font = new System.Drawing.Font("Lato", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Panek.Location = new System.Drawing.Point(79, 162);
             this.Panek.Name = "Panek";
-            this.Panek.Size = new System.Drawing.Size(337, 226);
+            this.Panek.Size = new System.Drawing.Size(337, 251);
             this.Panek.TabIndex = 2;
             // 
             // textOcu
             // 
-            this.textOcu.Location = new System.Drawing.Point(36, 116);
+            this.textOcu.Location = new System.Drawing.Point(36, 122);
             this.textOcu.Name = "textOcu";
             this.textOcu.Size = new System.Drawing.Size(259, 25);
             this.textOcu.TabIndex = 5;
@@ -138,9 +143,9 @@
             this.label3.ForeColor = System.Drawing.Color.White;
             this.label3.Location = new System.Drawing.Point(24, 24);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(95, 18);
+            this.label3.Size = new System.Drawing.Size(120, 18);
             this.label3.TabIndex = 0;
-            this.label3.Text = "Probabilidad:";
+            this.label3.Text = "(%) Probabilidad:";
             // 
             // textProb
             // 
@@ -153,6 +158,7 @@
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(119)))), ((int)(((byte)(182)))));
+            this.panel3.Controls.Add(this.label10);
             this.panel3.Controls.Add(this.textVarianza);
             this.panel3.Controls.Add(this.label5);
             this.panel3.Controls.Add(this.textProb);
@@ -181,9 +187,9 @@
             this.label5.ForeColor = System.Drawing.Color.White;
             this.label5.Location = new System.Drawing.Point(22, 233);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(88, 18);
+            this.label5.Size = new System.Drawing.Size(98, 18);
             this.label5.TabIndex = 5;
-            this.label5.Text = "La varianza:";
+            this.label5.Text = "(σ  ) Varianza:";
             // 
             // textDesv
             // 
@@ -199,9 +205,9 @@
             this.label8.ForeColor = System.Drawing.Color.White;
             this.label8.Location = new System.Drawing.Point(24, 162);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(148, 18);
+            this.label8.Size = new System.Drawing.Size(169, 18);
             this.label8.TabIndex = 3;
-            this.label8.Text = "Desviacion Estandar:";
+            this.label8.Text = "(σ) Desviacion estándar:";
             this.label8.Click += new System.EventHandler(this.label8_Click);
             // 
             // label7
@@ -210,9 +216,9 @@
             this.label7.ForeColor = System.Drawing.Color.White;
             this.label7.Location = new System.Drawing.Point(24, 91);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(54, 18);
+            this.label7.Size = new System.Drawing.Size(75, 18);
             this.label7.TabIndex = 2;
-            this.label7.Text = "Media:";
+            this.label7.Text = "(μ) Media:";
             // 
             // textMedia
             // 
@@ -242,18 +248,6 @@
             this.panel2.Size = new System.Drawing.Size(337, 35);
             this.panel2.TabIndex = 26;
             // 
-            // label6
-            // 
-            this.label6.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label6.Font = new System.Drawing.Font("Lato", 11.25F);
-            this.label6.ForeColor = System.Drawing.Color.White;
-            this.label6.Location = new System.Drawing.Point(0, 0);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(337, 35);
-            this.label6.TabIndex = 0;
-            this.label6.Text = "Datos";
-            this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
             // label9
             // 
             this.label9.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -265,6 +259,18 @@
             this.label9.TabIndex = 1;
             this.label9.Text = "Datos";
             this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label6
+            // 
+            this.label6.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label6.Font = new System.Drawing.Font("Lato", 11.25F);
+            this.label6.ForeColor = System.Drawing.Color.White;
+            this.label6.Location = new System.Drawing.Point(0, 0);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(337, 35);
+            this.label6.TabIndex = 0;
+            this.label6.Text = "Datos";
+            this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel4
             // 
@@ -286,6 +292,44 @@
             this.label11.TabIndex = 0;
             this.label11.Text = "Resultados";
             this.label11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.BackColor = System.Drawing.Color.Transparent;
+            this.label10.Font = new System.Drawing.Font("Lato", 9F);
+            this.label10.ForeColor = System.Drawing.Color.White;
+            this.label10.Location = new System.Drawing.Point(35, 225);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(14, 15);
+            this.label10.TabIndex = 7;
+            this.label10.Text = "2";
+            // 
+            // textVac
+            // 
+            this.textVac.AutoSize = true;
+            this.textVac.Font = new System.Drawing.Font("Lato", 8F);
+            this.textVac.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.textVac.Location = new System.Drawing.Point(38, 71);
+            this.textVac.Margin = new System.Windows.Forms.Padding(0);
+            this.textVac.Name = "textVac";
+            this.textVac.Size = new System.Drawing.Size(162, 13);
+            this.textVac.TabIndex = 6;
+            this.textVac.Text = "* Ingrese Lambda para continuar";
+            this.textVac.Visible = false;
+            // 
+            // textVac2
+            // 
+            this.textVac2.AutoSize = true;
+            this.textVac2.Font = new System.Drawing.Font("Lato", 8F);
+            this.textVac2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.textVac2.Location = new System.Drawing.Point(38, 150);
+            this.textVac2.Margin = new System.Windows.Forms.Padding(0);
+            this.textVac2.Name = "textVac2";
+            this.textVac2.Size = new System.Drawing.Size(240, 13);
+            this.textVac2.TabIndex = 7;
+            this.textVac2.Text = "* Ingrese el Numero de ocurrencia para continuar";
+            this.textVac2.Visible = false;
             // 
             // DPoisson
             // 
@@ -337,5 +381,8 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label textVac;
+        private System.Windows.Forms.Label textVac2;
     }
 }

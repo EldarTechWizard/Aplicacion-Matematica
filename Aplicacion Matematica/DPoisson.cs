@@ -26,28 +26,54 @@ namespace Aplicacion_Matematica
                 factorial *= i;
             }
             double result = (Math.Exp(-lambda) * Math.Pow(lambda, numOc)) / factorial;
-            Console.WriteLine(result + "->" + result * 100 + "%");
+            
             return result;
         }
 
 
         private void button1_Click(object sender, EventArgs e)
         {
+            bool error = false;
+
+            if(textLambda.Text == "")
+            {
+                textVac.Visible = true;
+                error = true;
+            }
+            if (textOcu.Text == "")
+            {
+                textVac2.Visible = true;
+                error = true;
+            }
+
+            if(error == true)
+            {
+                return;
+            }
+
+
             double numOc = 1;//numero de ocurrencias
             double lambda = 1;
             double desvEst = 0;
+            double prob1 = 0;
 
             lambda = Convert.ToDouble(textLambda.Text);
 
             numOc = Convert.ToDouble(textOcu.Text);
 
-            textProb.Text = prob(lambda,numOc).ToString();
+            prob1 = prob(lambda, numOc) * 100;
+            prob1 = Math.Round(prob1, 2);
+
+            textProb.Text = prob1.ToString()+"%";
             textMedia.Text = lambda.ToString();
             textVarianza.Text = lambda.ToString();
 
 
             desvEst = Math.Sqrt(lambda);
             textDesv.Text = desvEst.ToString();
+
+            textVac.Visible = false;
+            textVac2.Visible = false;
         }
 
         private void label8_Click(object sender, EventArgs e)

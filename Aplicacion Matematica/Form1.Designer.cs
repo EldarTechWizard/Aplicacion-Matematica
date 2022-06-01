@@ -92,7 +92,7 @@
             this.DistribucionNormal_Button.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.DistribucionNormal_Button.Size = new System.Drawing.Size(294, 130);
             this.DistribucionNormal_Button.TabIndex = 6;
-            this.DistribucionNormal_Button.Text = "Distribucion normal";
+            this.DistribucionNormal_Button.Text = "Distribución normal";
             this.DistribucionNormal_Button.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
             this.DistribucionNormal_Button.UseVisualStyleBackColor = false;
             this.DistribucionNormal_Button.Click += new System.EventHandler(this.button1_Click_1);
@@ -113,7 +113,7 @@
             this.ButtonDisP.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.ButtonDisP.Size = new System.Drawing.Size(294, 130);
             this.ButtonDisP.TabIndex = 2;
-            this.ButtonDisP.Text = "Distribucion de poisson";
+            this.ButtonDisP.Text = "Distribución de poisson";
             this.ButtonDisP.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
             this.ButtonDisP.UseVisualStyleBackColor = false;
             this.ButtonDisP.Click += new System.EventHandler(this.DistribucionPoisson_text_Click);

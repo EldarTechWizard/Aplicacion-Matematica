@@ -59,13 +59,25 @@ namespace Aplicacion_Matematica
             disEs = Convert.ToDouble(textDesvEs.Text);
 
             double answer = (valor - media) / disEs;
-
+            double answer2;
             answer = Math.Round(answer, 2);
 
+            if(answer < 0)
+            {
+                answer2 = answer * -1;
+            }
+            else
+            {
+                answer2 = answer;
+            }
 
-            double z = valores[answer];
 
-            zText.Text = z.ToString();
+            double z = valores[answer2];
+
+            textAnswer.Text = z.ToString();
+
+
+            zText.Text = answer.ToString();
 
         }
 
@@ -74,14 +86,42 @@ namespace Aplicacion_Matematica
 
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void button2_Click(object sender, EventArgs e)//derecha
         {
+            double z = Convert.ToDouble(zText.Text);
+            double ABC;
+            double a = Convert.ToDouble(textAnswer.Text);//valor de la tabla
+            if (z < 0)
+            {
 
+                ABC = 50 + (a * 100);
+                textABC.Text = ABC.ToString() + "%";
+            }
+            if (z > 0)
+            {
+
+                ABC = 50 - (a * 100);
+                textABC.Text = ABC.ToString() + "%";
+            }
         }
 
-        private void button3_Click(object sender, EventArgs e)
+        private void button3_Click(object sender, EventArgs e)//izquierda
         {
+            double z = Convert.ToDouble(zText.Text);
+            double ABC;
+            double a = Convert.ToDouble(textAnswer.Text);//valor de la tabla
+            if (z > 0)
+            {
 
+                ABC = 50 + (a * 100);
+                textABC.Text = ABC.ToString() + "%";
+            }
+            if (z < 0)
+            {
+
+                ABC = 50 - (a * 100);
+                textABC.Text = ABC.ToString() + "%";
+            }
         }
     }
 }

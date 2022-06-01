@@ -37,6 +37,8 @@
             this.aceptarCalc = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.textABC = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
             this.zText = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
@@ -49,8 +51,7 @@
             this.panel6 = new System.Windows.Forms.Panel();
             this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
-            this.textABC = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
+            this.textAnswer = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -89,9 +90,9 @@
             this.label2.ForeColor = System.Drawing.Color.White;
             this.label2.Location = new System.Drawing.Point(35, 24);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(47, 18);
+            this.label2.Size = new System.Drawing.Size(68, 18);
             this.label2.TabIndex = 4;
-            this.label2.Text = "Valor:";
+            this.label2.Text = "(x) Valor:";
             // 
             // label3
             // 
@@ -100,9 +101,9 @@
             this.label3.ForeColor = System.Drawing.Color.White;
             this.label3.Location = new System.Drawing.Point(35, 90);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(54, 18);
+            this.label3.Size = new System.Drawing.Size(75, 18);
             this.label3.TabIndex = 5;
-            this.label3.Text = "Media:";
+            this.label3.Text = "(μ) Media:";
             // 
             // label4
             // 
@@ -111,9 +112,9 @@
             this.label4.ForeColor = System.Drawing.Color.White;
             this.label4.Location = new System.Drawing.Point(36, 157);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(147, 18);
+            this.label4.Size = new System.Drawing.Size(169, 18);
             this.label4.TabIndex = 6;
-            this.label4.Text = "Desviacion estandar:";
+            this.label4.Text = "(σ) Desviación estándar:";
             // 
             // aceptarCalc
             // 
@@ -159,15 +160,36 @@
             this.panel2.Size = new System.Drawing.Size(338, 185);
             this.panel2.TabIndex = 10;
             // 
+            // textABC
+            // 
+            this.textABC.BackColor = System.Drawing.Color.White;
+            this.textABC.Font = new System.Drawing.Font("Lato", 12F);
+            this.textABC.Location = new System.Drawing.Point(43, 119);
+            this.textABC.Name = "textABC";
+            this.textABC.Size = new System.Drawing.Size(254, 23);
+            this.textABC.TabIndex = 10;
+            this.textABC.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Lato", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.ForeColor = System.Drawing.Color.White;
+            this.label10.Location = new System.Drawing.Point(40, 92);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(109, 18);
+            this.label10.TabIndex = 9;
+            this.label10.Text = "(%) Porcentaje:";
+            // 
             // zText
             // 
             this.zText.BackColor = System.Drawing.Color.White;
             this.zText.Font = new System.Drawing.Font("Lato", 12F);
             this.zText.Location = new System.Drawing.Point(42, 51);
             this.zText.Name = "zText";
-            this.zText.Padding = new System.Windows.Forms.Padding(5);
             this.zText.Size = new System.Drawing.Size(255, 22);
             this.zText.TabIndex = 1;
+            this.zText.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.zText.Click += new System.EventHandler(this.zText_Click);
             // 
             // label5
@@ -177,9 +199,9 @@
             this.label5.ForeColor = System.Drawing.Color.White;
             this.label5.Location = new System.Drawing.Point(40, 22);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(78, 18);
+            this.label5.Size = new System.Drawing.Size(180, 18);
             this.label5.TabIndex = 0;
-            this.label5.Text = "Valor de Z:";
+            this.label5.Text = "(Z) Desviaciones estandar";
             // 
             // panel3
             // 
@@ -264,7 +286,7 @@
             this.panel6.Controls.Add(this.button2);
             this.panel6.Font = new System.Drawing.Font("Lato", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.panel6.ForeColor = System.Drawing.Color.White;
-            this.panel6.Location = new System.Drawing.Point(88, 496);
+            this.panel6.Location = new System.Drawing.Point(543, 405);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(337, 69);
             this.panel6.TabIndex = 30;
@@ -278,9 +300,9 @@
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(133, 29);
             this.button3.TabIndex = 1;
-            this.button3.Text = "Derecha";
+            this.button3.Text = "Mayor";
             this.button3.UseVisualStyleBackColor = false;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
+            this.button3.Click += new System.EventHandler(this.button2_Click);
             // 
             // button2
             // 
@@ -291,28 +313,19 @@
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(122, 29);
             this.button2.TabIndex = 0;
-            this.button2.Text = "Izquierda";
+            this.button2.Text = "Menor";
             this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.button2.Click += new System.EventHandler(this.button3_Click);
             // 
-            // textABC
+            // textAnswer
             // 
-            this.textABC.BackColor = System.Drawing.Color.White;
-            this.textABC.Location = new System.Drawing.Point(43, 119);
-            this.textABC.Name = "textABC";
-            this.textABC.Size = new System.Drawing.Size(254, 23);
-            this.textABC.TabIndex = 10;
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Lato", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.ForeColor = System.Drawing.Color.White;
-            this.label10.Location = new System.Drawing.Point(40, 92);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(42, 18);
-            this.label10.TabIndex = 9;
-            this.label10.Text = "ABC:";
+            this.textAnswer.AutoSize = true;
+            this.textAnswer.ForeColor = System.Drawing.Color.White;
+            this.textAnswer.Location = new System.Drawing.Point(674, 372);
+            this.textAnswer.Name = "textAnswer";
+            this.textAnswer.Size = new System.Drawing.Size(35, 13);
+            this.textAnswer.TabIndex = 31;
+            this.textAnswer.Text = "label7";
             // 
             // Dnormal
             // 
@@ -320,6 +333,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(979, 623);
+            this.Controls.Add(this.textAnswer);
             this.Controls.Add(this.panel6);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel5);
@@ -339,6 +353,7 @@
             this.panel5.ResumeLayout(false);
             this.panel6.ResumeLayout(false);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -366,5 +381,6 @@
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Label textABC;
         private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label textAnswer;
     }
 }
