@@ -42,8 +42,52 @@ namespace Aplicacion_Matematica
 
 		private void button1_Click(object sender, EventArgs e)
 		{
+			textMedia.Text = "";
+			textDesv.Text = "";
+			textProbf.Text = "";
+
+
 			double n = 0, x = 0, N = 2;
 			double p = 0;
+
+			bool error = false;
+
+			if (xText.Text == "")
+			{
+				textVac.Visible = true;
+				error = true;
+			}
+			else
+			{
+				textVac.Visible = false;
+			}
+
+			if (nText.Text == "")
+			{
+				textVac2.Visible = true;
+				error = true;
+			}
+			else
+			{
+				textVac2.Visible = false;
+			}
+
+			if (pText.Text == "")
+			{
+				textVac3.Visible = true;
+				error = true;
+			}
+			else
+			{
+				textVac3.Visible = false;
+			}
+
+			if (error == true)
+			{
+				return;
+			}
+
+
 
 			Factorial fact = new Factorial();
 

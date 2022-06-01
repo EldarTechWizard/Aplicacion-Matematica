@@ -33,6 +33,12 @@ namespace Aplicacion_Matematica
 
         private void button1_Click(object sender, EventArgs e)
         {
+            textProb.Text = "";
+            textMedia.Text = "";
+            textDesv.Text = "";
+            textVarianza.Text = "";
+
+
             bool error = false;
 
             if(textLambda.Text == "")

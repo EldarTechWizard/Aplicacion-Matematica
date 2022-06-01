@@ -52,6 +52,11 @@
             this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.textAnswer = new System.Windows.Forms.Label();
+            this.textVac = new System.Windows.Forms.Label();
+            this.textVac2 = new System.Windows.Forms.Label();
+            this.textVac3 = new System.Windows.Forms.Label();
+            this.errorDic = new System.Windows.Forms.Label();
+            this.textZError = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -64,21 +69,21 @@
             // 
             this.textValor.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textValor.ForeColor = System.Drawing.Color.Black;
-            this.textValor.Location = new System.Drawing.Point(38, 50);
+            this.textValor.Location = new System.Drawing.Point(38, 51);
             this.textValor.Name = "textValor";
             this.textValor.Size = new System.Drawing.Size(256, 27);
             this.textValor.TabIndex = 1;
             // 
             // textDesvEs
             // 
-            this.textDesvEs.Location = new System.Drawing.Point(38, 184);
+            this.textDesvEs.Location = new System.Drawing.Point(38, 206);
             this.textDesvEs.Name = "textDesvEs";
             this.textDesvEs.Size = new System.Drawing.Size(255, 27);
             this.textDesvEs.TabIndex = 2;
             // 
             // textMedia
             // 
-            this.textMedia.Location = new System.Drawing.Point(38, 116);
+            this.textMedia.Location = new System.Drawing.Point(38, 127);
             this.textMedia.Name = "textMedia";
             this.textMedia.Size = new System.Drawing.Size(255, 27);
             this.textMedia.TabIndex = 3;
@@ -88,7 +93,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Lato", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(35, 24);
+            this.label2.Location = new System.Drawing.Point(35, 26);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(68, 18);
             this.label2.TabIndex = 4;
@@ -99,7 +104,7 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Lato", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(35, 90);
+            this.label3.Location = new System.Drawing.Point(35, 104);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(75, 18);
             this.label3.TabIndex = 5;
@@ -110,7 +115,7 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Lato", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(36, 157);
+            this.label4.Location = new System.Drawing.Point(36, 181);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(169, 18);
             this.label4.TabIndex = 6;
@@ -123,7 +128,7 @@
             this.aceptarCalc.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.aceptarCalc.Font = new System.Drawing.Font("Lato", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.aceptarCalc.ForeColor = System.Drawing.Color.White;
-            this.aceptarCalc.Location = new System.Drawing.Point(38, 237);
+            this.aceptarCalc.Location = new System.Drawing.Point(38, 261);
             this.aceptarCalc.Name = "aceptarCalc";
             this.aceptarCalc.Size = new System.Drawing.Size(255, 35);
             this.aceptarCalc.TabIndex = 7;
@@ -134,6 +139,10 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(119)))), ((int)(((byte)(182)))));
+            this.panel1.Controls.Add(this.errorDic);
+            this.panel1.Controls.Add(this.textVac3);
+            this.panel1.Controls.Add(this.textVac2);
+            this.panel1.Controls.Add(this.textVac);
             this.panel1.Controls.Add(this.textValor);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.aceptarCalc);
@@ -142,10 +151,10 @@
             this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.textDesvEs);
             this.panel1.Font = new System.Drawing.Font("Lato", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.panel1.Location = new System.Drawing.Point(88, 174);
+            this.panel1.Location = new System.Drawing.Point(94, 174);
             this.panel1.Name = "panel1";
             this.panel1.Padding = new System.Windows.Forms.Padding(5);
-            this.panel1.Size = new System.Drawing.Size(337, 300);
+            this.panel1.Size = new System.Drawing.Size(337, 325);
             this.panel1.TabIndex = 9;
             // 
             // panel2
@@ -155,7 +164,7 @@
             this.panel2.Controls.Add(this.label10);
             this.panel2.Controls.Add(this.zText);
             this.panel2.Controls.Add(this.label5);
-            this.panel2.Location = new System.Drawing.Point(542, 174);
+            this.panel2.Location = new System.Drawing.Point(548, 174);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(338, 185);
             this.panel2.TabIndex = 10;
@@ -228,7 +237,7 @@
             // 
             this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(119)))), ((int)(((byte)(182)))));
             this.panel4.Controls.Add(this.label11);
-            this.panel4.Location = new System.Drawing.Point(542, 117);
+            this.panel4.Location = new System.Drawing.Point(548, 117);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(338, 35);
             this.panel4.TabIndex = 29;
@@ -250,7 +259,7 @@
             this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(119)))), ((int)(((byte)(182)))));
             this.panel5.Controls.Add(this.label9);
             this.panel5.Controls.Add(this.label1);
-            this.panel5.Location = new System.Drawing.Point(88, 117);
+            this.panel5.Location = new System.Drawing.Point(94, 117);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(337, 35);
             this.panel5.TabIndex = 28;
@@ -282,13 +291,14 @@
             // panel6
             // 
             this.panel6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(119)))), ((int)(((byte)(182)))));
+            this.panel6.Controls.Add(this.textZError);
             this.panel6.Controls.Add(this.button3);
             this.panel6.Controls.Add(this.button2);
             this.panel6.Font = new System.Drawing.Font("Lato", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.panel6.ForeColor = System.Drawing.Color.White;
-            this.panel6.Location = new System.Drawing.Point(543, 405);
+            this.panel6.Location = new System.Drawing.Point(548, 380);
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(337, 69);
+            this.panel6.Size = new System.Drawing.Size(338, 76);
             this.panel6.TabIndex = 30;
             // 
             // button3
@@ -296,7 +306,7 @@
             this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(150)))), ((int)(((byte)(199)))));
             this.button3.FlatAppearance.BorderSize = 0;
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Location = new System.Drawing.Point(172, 20);
+            this.button3.Location = new System.Drawing.Point(172, 22);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(133, 29);
             this.button3.TabIndex = 1;
@@ -309,7 +319,7 @@
             this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(150)))), ((int)(((byte)(199)))));
             this.button2.FlatAppearance.BorderSize = 0;
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Location = new System.Drawing.Point(33, 20);
+            this.button2.Location = new System.Drawing.Point(33, 24);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(122, 29);
             this.button2.TabIndex = 0;
@@ -321,11 +331,74 @@
             // 
             this.textAnswer.AutoSize = true;
             this.textAnswer.ForeColor = System.Drawing.Color.White;
-            this.textAnswer.Location = new System.Drawing.Point(674, 372);
+            this.textAnswer.Location = new System.Drawing.Point(910, 254);
             this.textAnswer.Name = "textAnswer";
             this.textAnswer.Size = new System.Drawing.Size(35, 13);
             this.textAnswer.TabIndex = 31;
             this.textAnswer.Text = "label7";
+            // 
+            // textVac
+            // 
+            this.textVac.AutoSize = true;
+            this.textVac.Font = new System.Drawing.Font("Lato", 8F);
+            this.textVac.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.textVac.Location = new System.Drawing.Point(39, 80);
+            this.textVac.Margin = new System.Windows.Forms.Padding(0);
+            this.textVac.Name = "textVac";
+            this.textVac.Size = new System.Drawing.Size(162, 13);
+            this.textVac.TabIndex = 8;
+            this.textVac.Text = "* Ingrese un Valor para continuar";
+            this.textVac.Visible = false;
+            // 
+            // textVac2
+            // 
+            this.textVac2.AutoSize = true;
+            this.textVac2.Font = new System.Drawing.Font("Lato", 8F);
+            this.textVac2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.textVac2.Location = new System.Drawing.Point(38, 157);
+            this.textVac2.Margin = new System.Windows.Forms.Padding(0);
+            this.textVac2.Name = "textVac2";
+            this.textVac2.Size = new System.Drawing.Size(165, 13);
+            this.textVac2.TabIndex = 9;
+            this.textVac2.Text = "* Ingrese la Media para continuar";
+            this.textVac2.Visible = false;
+            // 
+            // textVac3
+            // 
+            this.textVac3.AutoSize = true;
+            this.textVac3.Font = new System.Drawing.Font("Lato", 8F);
+            this.textVac3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.textVac3.Location = new System.Drawing.Point(40, 236);
+            this.textVac3.Margin = new System.Windows.Forms.Padding(0);
+            this.textVac3.Name = "textVac3";
+            this.textVac3.Size = new System.Drawing.Size(233, 13);
+            this.textVac3.TabIndex = 10;
+            this.textVac3.Text = "* Ingrese la Desviacion estandar para continuar";
+            this.textVac3.Visible = false;
+            // 
+            // errorDic
+            // 
+            this.errorDic.AutoSize = true;
+            this.errorDic.Font = new System.Drawing.Font("Lato", 8F);
+            this.errorDic.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.errorDic.Location = new System.Drawing.Point(41, 302);
+            this.errorDic.Name = "errorDic";
+            this.errorDic.Size = new System.Drawing.Size(249, 13);
+            this.errorDic.TabIndex = 11;
+            this.errorDic.Text = "*Los datos no pertenecen a un desviacion estandar";
+            this.errorDic.Visible = false;
+            // 
+            // textZError
+            // 
+            this.textZError.AutoSize = true;
+            this.textZError.Font = new System.Drawing.Font("Lato", 8F);
+            this.textZError.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.textZError.Location = new System.Drawing.Point(97, 57);
+            this.textZError.Name = "textZError";
+            this.textZError.Size = new System.Drawing.Size(127, 13);
+            this.textZError.TabIndex = 2;
+            this.textZError.Text = "*Se necesita el valor de Z";
+            this.textZError.Visible = false;
             // 
             // Dnormal
             // 
@@ -352,6 +425,7 @@
             this.panel4.ResumeLayout(false);
             this.panel5.ResumeLayout(false);
             this.panel6.ResumeLayout(false);
+            this.panel6.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -382,5 +456,10 @@
         private System.Windows.Forms.Label textABC;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label textAnswer;
+        private System.Windows.Forms.Label textVac3;
+        private System.Windows.Forms.Label textVac2;
+        private System.Windows.Forms.Label textVac;
+        private System.Windows.Forms.Label errorDic;
+        private System.Windows.Forms.Label textZError;
     }
 }

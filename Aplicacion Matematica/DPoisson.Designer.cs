@@ -33,11 +33,14 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.Panek = new System.Windows.Forms.Panel();
+            this.textVac2 = new System.Windows.Forms.Label();
+            this.textVac = new System.Windows.Forms.Label();
             this.textOcu = new System.Windows.Forms.TextBox();
             this.textLambda = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.textProb = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.label10 = new System.Windows.Forms.Label();
             this.textVarianza = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.textDesv = new System.Windows.Forms.Label();
@@ -50,9 +53,6 @@
             this.label6 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
             this.label11 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.textVac = new System.Windows.Forms.Label();
-            this.textVac2 = new System.Windows.Forms.Label();
             this.Panek.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -119,8 +119,34 @@
             this.Panek.Font = new System.Drawing.Font("Lato", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Panek.Location = new System.Drawing.Point(79, 162);
             this.Panek.Name = "Panek";
-            this.Panek.Size = new System.Drawing.Size(337, 251);
+            this.Panek.Size = new System.Drawing.Size(337, 240);
             this.Panek.TabIndex = 2;
+            // 
+            // textVac2
+            // 
+            this.textVac2.AutoSize = true;
+            this.textVac2.Font = new System.Drawing.Font("Lato", 8F);
+            this.textVac2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.textVac2.Location = new System.Drawing.Point(38, 151);
+            this.textVac2.Margin = new System.Windows.Forms.Padding(0);
+            this.textVac2.Name = "textVac2";
+            this.textVac2.Size = new System.Drawing.Size(240, 13);
+            this.textVac2.TabIndex = 7;
+            this.textVac2.Text = "* Ingrese el Numero de ocurrencia para continuar";
+            this.textVac2.Visible = false;
+            // 
+            // textVac
+            // 
+            this.textVac.AutoSize = true;
+            this.textVac.Font = new System.Drawing.Font("Lato", 8F);
+            this.textVac.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.textVac.Location = new System.Drawing.Point(38, 72);
+            this.textVac.Margin = new System.Windows.Forms.Padding(0);
+            this.textVac.Name = "textVac";
+            this.textVac.Size = new System.Drawing.Size(162, 13);
+            this.textVac.TabIndex = 6;
+            this.textVac.Text = "* Ingrese Lambda para continuar";
+            this.textVac.Visible = false;
             // 
             // textOcu
             // 
@@ -154,6 +180,7 @@
             this.textProb.Name = "textProb";
             this.textProb.Size = new System.Drawing.Size(283, 23);
             this.textProb.TabIndex = 1;
+            this.textProb.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel3
             // 
@@ -173,6 +200,18 @@
             this.panel3.Size = new System.Drawing.Size(338, 315);
             this.panel3.TabIndex = 24;
             // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.BackColor = System.Drawing.Color.Transparent;
+            this.label10.Font = new System.Drawing.Font("Lato", 9F);
+            this.label10.ForeColor = System.Drawing.Color.White;
+            this.label10.Location = new System.Drawing.Point(35, 225);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(14, 15);
+            this.label10.TabIndex = 7;
+            this.label10.Text = "2";
+            // 
             // textVarianza
             // 
             this.textVarianza.BackColor = System.Drawing.Color.White;
@@ -180,6 +219,7 @@
             this.textVarianza.Name = "textVarianza";
             this.textVarianza.Size = new System.Drawing.Size(284, 23);
             this.textVarianza.TabIndex = 6;
+            this.textVarianza.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label5
             // 
@@ -198,6 +238,7 @@
             this.textDesv.Name = "textDesv";
             this.textDesv.Size = new System.Drawing.Size(284, 23);
             this.textDesv.TabIndex = 4;
+            this.textDesv.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label8
             // 
@@ -227,6 +268,7 @@
             this.textMedia.Name = "textMedia";
             this.textMedia.Size = new System.Drawing.Size(284, 23);
             this.textMedia.TabIndex = 1;
+            this.textMedia.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel1
             // 
@@ -292,44 +334,6 @@
             this.label11.TabIndex = 0;
             this.label11.Text = "Resultados";
             this.label11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.BackColor = System.Drawing.Color.Transparent;
-            this.label10.Font = new System.Drawing.Font("Lato", 9F);
-            this.label10.ForeColor = System.Drawing.Color.White;
-            this.label10.Location = new System.Drawing.Point(35, 225);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(14, 15);
-            this.label10.TabIndex = 7;
-            this.label10.Text = "2";
-            // 
-            // textVac
-            // 
-            this.textVac.AutoSize = true;
-            this.textVac.Font = new System.Drawing.Font("Lato", 8F);
-            this.textVac.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.textVac.Location = new System.Drawing.Point(38, 71);
-            this.textVac.Margin = new System.Windows.Forms.Padding(0);
-            this.textVac.Name = "textVac";
-            this.textVac.Size = new System.Drawing.Size(162, 13);
-            this.textVac.TabIndex = 6;
-            this.textVac.Text = "* Ingrese Lambda para continuar";
-            this.textVac.Visible = false;
-            // 
-            // textVac2
-            // 
-            this.textVac2.AutoSize = true;
-            this.textVac2.Font = new System.Drawing.Font("Lato", 8F);
-            this.textVac2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.textVac2.Location = new System.Drawing.Point(38, 150);
-            this.textVac2.Margin = new System.Windows.Forms.Padding(0);
-            this.textVac2.Name = "textVac2";
-            this.textVac2.Size = new System.Drawing.Size(240, 13);
-            this.textVac2.TabIndex = 7;
-            this.textVac2.Text = "* Ingrese el Numero de ocurrencia para continuar";
-            this.textVac2.Visible = false;
             // 
             // DPoisson
             // 

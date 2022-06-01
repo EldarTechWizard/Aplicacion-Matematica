@@ -54,6 +54,9 @@
             this.nText = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.xText = new System.Windows.Forms.TextBox();
+            this.textVac = new System.Windows.Forms.Label();
+            this.textVac2 = new System.Windows.Forms.Label();
+            this.textVac3 = new System.Windows.Forms.Label();
             label3 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel5.SuspendLayout();
@@ -265,6 +268,9 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(119)))), ((int)(((byte)(182)))));
+            this.panel2.Controls.Add(this.textVac3);
+            this.panel2.Controls.Add(this.textVac2);
+            this.panel2.Controls.Add(this.textVac);
             this.panel2.Controls.Add(this.button1);
             this.panel2.Controls.Add(this.pText);
             this.panel2.Controls.Add(this.label5);
@@ -275,7 +281,7 @@
             this.panel2.Font = new System.Drawing.Font("Lato", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.panel2.Location = new System.Drawing.Point(74, 166);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(379, 306);
+            this.panel2.Size = new System.Drawing.Size(379, 313);
             this.panel2.TabIndex = 22;
             // 
             // button1
@@ -285,7 +291,7 @@
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Lato", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(29, 237);
+            this.button1.Location = new System.Drawing.Point(29, 253);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(319, 38);
             this.button1.TabIndex = 6;
@@ -295,7 +301,7 @@
             // 
             // pText
             // 
-            this.pText.Location = new System.Drawing.Point(29, 190);
+            this.pText.Location = new System.Drawing.Point(29, 198);
             this.pText.Name = "pText";
             this.pText.Size = new System.Drawing.Size(319, 25);
             this.pText.TabIndex = 5;
@@ -304,7 +310,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(26, 162);
+            this.label5.Location = new System.Drawing.Point(26, 176);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(172, 18);
             this.label5.TabIndex = 4;
@@ -313,7 +319,7 @@
             // 
             // nText
             // 
-            this.nText.Location = new System.Drawing.Point(29, 117);
+            this.nText.Location = new System.Drawing.Point(29, 122);
             this.nText.Name = "nText";
             this.nText.Size = new System.Drawing.Size(319, 25);
             this.nText.TabIndex = 3;
@@ -321,7 +327,7 @@
             // label4
             // 
             this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(26, 90);
+            this.label4.Location = new System.Drawing.Point(26, 101);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(333, 21);
             this.label4.TabIndex = 2;
@@ -333,6 +339,45 @@
             this.xText.Name = "xText";
             this.xText.Size = new System.Drawing.Size(319, 25);
             this.xText.TabIndex = 1;
+            // 
+            // textVac
+            // 
+            this.textVac.AutoSize = true;
+            this.textVac.Font = new System.Drawing.Font("Lato", 8F);
+            this.textVac.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.textVac.Location = new System.Drawing.Point(30, 77);
+            this.textVac.Margin = new System.Windows.Forms.Padding(0);
+            this.textVac.Name = "textVac";
+            this.textVac.Size = new System.Drawing.Size(190, 13);
+            this.textVac.TabIndex = 32;
+            this.textVac.Text = "* Ingrese un valor en (x) para continuar";
+            this.textVac.Visible = false;
+            // 
+            // textVac2
+            // 
+            this.textVac2.AutoSize = true;
+            this.textVac2.Font = new System.Drawing.Font("Lato", 8F);
+            this.textVac2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.textVac2.Location = new System.Drawing.Point(28, 150);
+            this.textVac2.Margin = new System.Windows.Forms.Padding(0);
+            this.textVac2.Name = "textVac2";
+            this.textVac2.Size = new System.Drawing.Size(190, 13);
+            this.textVac2.TabIndex = 32;
+            this.textVac2.Text = "* Ingrese un valor en (n) para continuar";
+            this.textVac2.Visible = false;
+            // 
+            // textVac3
+            // 
+            this.textVac3.AutoSize = true;
+            this.textVac3.Font = new System.Drawing.Font("Lato", 8F);
+            this.textVac3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.textVac3.Location = new System.Drawing.Point(30, 226);
+            this.textVac3.Margin = new System.Windows.Forms.Padding(0);
+            this.textVac3.Name = "textVac3";
+            this.textVac3.Size = new System.Drawing.Size(190, 13);
+            this.textVac3.TabIndex = 32;
+            this.textVac3.Text = "* Ingrese un valor en (p) para continuar";
+            this.textVac3.Visible = false;
             // 
             // Dbinomial
             // 
@@ -387,5 +432,8 @@
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label textVac3;
+        private System.Windows.Forms.Label textVac2;
+        private System.Windows.Forms.Label textVac;
     }
 }
