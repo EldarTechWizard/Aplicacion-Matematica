@@ -55,13 +55,14 @@ namespace Aplicacion_Matematica
             }
 
 
-            double valor, media, disEs;
+            double valor = 0, media = 0, disEs = 0;
 
             bool error = false;
 
             if (textValor.Text == "")
             {
                 textVac.Visible = true;
+                textVac.Text = "* Ingrese un Valor para continuar";
                 error = true;
             }
             else
@@ -72,6 +73,7 @@ namespace Aplicacion_Matematica
             if (textMedia.Text == "")
             {
                 textVac2.Visible = true;
+                textVac2.Text = "* Ingrese la Media para continuar";
                 error = true;
             }
             else
@@ -82,6 +84,7 @@ namespace Aplicacion_Matematica
             if (textDesvEs.Text == "")
             {
                 textVac3.Visible = true;
+                textVac3.Text = "* Ingrese la Desviacion estandar para continuar";
                 error = true;
             }
             else
@@ -96,11 +99,45 @@ namespace Aplicacion_Matematica
 
 
 
+            try
+            {
+                valor = Convert.ToDouble(textValor.Text);//try
+            }
+            catch (FormatException)
+            {
+                textVac.Text = "* ingrese un valor correcto";
+                textVac.Visible = true;
+                error = true;
+            }
+
+            try
+            {
+                media = Convert.ToDouble(textMedia.Text);//try
+            }
+            catch (FormatException)
+            {
+                textVac2.Text = "* ingrese un valor correcto";
+                textVac2.Visible = true;
+                error = true;
+            }
 
 
-            valor = Convert.ToDouble(textValor.Text);
-            media = Convert.ToDouble(textMedia.Text);
-            disEs = Convert.ToDouble(textDesvEs.Text);
+            try
+            {
+                disEs = Convert.ToDouble(textDesvEs.Text);//try
+            }
+            catch (FormatException)
+            {
+                textVac3.Text = "* ingrese un valor correcto";
+                textVac3.Visible = true;
+                error = true;
+            }
+
+            if(error == true)
+            {
+                return;
+            }
+          
 
             double answer = (valor - media) / disEs;
             double answer2;

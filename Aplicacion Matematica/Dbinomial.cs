@@ -55,6 +55,7 @@ namespace Aplicacion_Matematica
 			if (xText.Text == "")
 			{
 				textVac.Visible = true;
+				textVac.Text = "* Ingrese un valor en (x) para continuar";
 				error = true;
 			}
 			else
@@ -65,6 +66,7 @@ namespace Aplicacion_Matematica
 			if (nText.Text == "")
 			{
 				textVac2.Visible = true;
+				textVac2.Text = "* Ingrese un valor en (n) para continuar";
 				error = true;
 			}
 			else
@@ -75,6 +77,7 @@ namespace Aplicacion_Matematica
 			if (pText.Text == "")
 			{
 				textVac3.Visible = true;
+				textVac3.Text = "* Ingrese un valor en (p) para continuar";
 				error = true;
 			}
 			else
@@ -91,9 +94,44 @@ namespace Aplicacion_Matematica
 
 			Factorial fact = new Factorial();
 
-			n = Convert.ToDouble(nText.Text);
-			x = Convert.ToDouble(xText.Text);
-			p = Convert.ToDouble(pText.Text);
+            try
+            {
+				n = Convert.ToDouble(nText.Text);//try
+			}
+            catch (FormatException)
+            {
+				textVac.Text = "* ingrese un valor correcto";
+				textVac.Visible = true;
+				error = true;
+			}
+
+			try
+			{
+				x = Convert.ToDouble(xText.Text);//try
+			}
+			catch (FormatException)
+			{
+				textVac2.Text = "* ingrese un valor correcto";
+				textVac2.Visible = true;
+				error = true;
+			}
+
+			try
+			{
+				p = Convert.ToDouble(pText.Text);//try
+			}
+			catch (FormatException)
+			{
+				textVac3.Text = "* ingrese un valor correcto";
+				textVac3.Visible = true;
+				error = true;
+			}
+
+			if(error == true)
+            {
+				return;
+            }
+			
 
 
 			double q = 1 - p;
@@ -114,7 +152,7 @@ namespace Aplicacion_Matematica
 				textMedia.Text = media.ToString();
 				textDesv.Text = DE.ToString();
 			}
-			if (x > n1)
+			if (x >= n1)
 			{
 				textTitle.Text = "Para poblacion Finita";
 				double Media = x * p;

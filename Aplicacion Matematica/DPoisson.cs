@@ -38,17 +38,21 @@ namespace Aplicacion_Matematica
             textDesv.Text = "";
             textVarianza.Text = "";
 
+            textVac.Visible = false;
+            textVac2.Visible = false;
 
             bool error = false;
 
             if(textLambda.Text == "")
             {
                 textVac.Visible = true;
+                textVac.Text = "* Ingrese Lambda para continuar";
                 error = true;
             }
             if (textOcu.Text == "")
             {
                 textVac2.Visible = true;
+                textVac2.Text = "* Ingrese el Numero de ocurrencia para continuar";
                 error = true;
             }
 
@@ -63,9 +67,34 @@ namespace Aplicacion_Matematica
             double desvEst = 0;
             double prob1 = 0;
 
-            lambda = Convert.ToDouble(textLambda.Text);
 
-            numOc = Convert.ToDouble(textOcu.Text);
+            
+            try
+            {
+                lambda = Convert.ToDouble(textLambda.Text);
+            }
+            catch (FormatException)
+            {
+                textVac.Text = "* ingrese un valor correcto";
+                textVac.Visible = true;
+                error = true;
+            }
+
+            try
+            {
+                numOc = Convert.ToDouble(textOcu.Text);
+            }
+            catch (FormatException)
+            {
+                textVac2.Text = "* ingrese un valor correcto";
+                textVac2.Visible = true;
+                error = true;
+            }
+
+            if (error == true)
+            {
+                return;
+            }
 
             prob1 = prob(lambda, numOc) * 100;
             prob1 = Math.Round(prob1, 2);
@@ -78,8 +107,7 @@ namespace Aplicacion_Matematica
             desvEst = Math.Sqrt(lambda);
             textDesv.Text = desvEst.ToString();
 
-            textVac.Visible = false;
-            textVac2.Visible = false;
+            
         }
 
         private void label8_Click(object sender, EventArgs e)
